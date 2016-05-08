@@ -1,0 +1,995 @@
+GISJOIN,YEAR,STATE,STATEFP,STATENH,COUNTY,COUNTYFP,COUNTYNH,NAME,A00AA1830,A08AA1830,A08AB1830
+"G0100010","1830","Alabama","01","010","Autauga County","001","0010","Autauga",11874,6263,5611
+"G0100030","1830","Alabama","01","010","Baldwin County","003","0030","Baldwin",2324,1291,1033
+"G0100070","1830","Alabama","01","010","Bibb County","007","0070","Bibb",6306,3241,3065
+"G0100090","1830","Alabama","01","010","Blount County","009","0090","Blount",4233,2139,2094
+"G0100130","1830","Alabama","01","010","Butler County","013","0130","Butler",5650,2875,2775
+"G0100250","1830","Alabama","01","010","Clarke County","025","0250","Clarke",7595,3884,3711
+"G0100350","1830","Alabama","01","010","Conecuh County","035","0350","Conecuh",7444,3874,3570
+"G0100390","1830","Alabama","01","010","Covington County","039","0390","Covington",1522,803,719
+"G0100450","1830","Alabama","01","010","Dale County","045","0450","Dale",2031,1070,961
+"G0100470","1830","Alabama","01","010","Dallas County","047","0470","Dallas",14017,7291,6726
+"G0100570","1830","Alabama","01","010","Fayette County","057","0570","Fayette",3547,1842,1705
+"G0100590","1830","Alabama","01","010","Franklin County","059","0590","Franklin",11078,5754,5324
+"G0100630","1830","Alabama","01","010","Greene County","063","0630","Greene",15026,7785,7241
+"G0100670","1830","Alabama","01","010","Henry County","067","0670","Henry",4020,2078,1942
+"G0100710","1830","Alabama","01","010","Jackson County","071","0710","Jackson",12700,6513,6187
+"G0100730","1830","Alabama","01","010","Jefferson County","073","0730","Jefferson",6855,3526,3329
+"G0100770","1830","Alabama","01","010","Lauderdale County","077","0770","Lauderdale",11781,6271,5510
+"G0100790","1830","Alabama","01","010","Lawrence County","079","0790","Lawrence",14984,7800,7184
+"G0100830","1830","Alabama","01","010","Limestone County","083","0830","Limestone",14807,7642,7165
+"G0100850","1830","Alabama","01","010","Lowndes County","085","0850","Lowndes",9410,4855,4555
+"G0100890","1830","Alabama","01","010","Madison County","089","0890","Madison",27990,14409,13581
+"G0100910","1830","Alabama","01","010","Marengo County","091","0910","Marengo",7700,3950,3750
+"G0100930","1830","Alabama","01","010","Marion County","093","0930","Marion",4058,2054,2004
+"G0100970","1830","Alabama","01","010","Mobile County","097","0970","Mobile",6267,3572,2695
+"G0100990","1830","Alabama","01","010","Monroe County","099","0990","Monroe",8782,4509,4273
+"G0101010","1830","Alabama","01","010","Montgomery County","101","1010","Montgomery",12695,6637,6058
+"G0101030","1830","Alabama","01","010","Morgan County","103","1030","Morgan",9062,4591,4471
+"G0101050","1830","Alabama","01","010","Perry County","105","1050","Perry",11490,6061,5429
+"G0101070","1830","Alabama","01","010","Pickens County","107","1070","Pickens",6622,3455,3167
+"G0101090","1830","Alabama","01","010","Pike County","109","1090","Pike",7108,3714,3394
+"G0101150","1830","Alabama","01","010","St. Clair County","115","1150","St Clair",5975,3110,2865
+"G0101170","1830","Alabama","01","010","Shelby County","117","1170","Shelby",5704,2944,2760
+"G0101250","1830","Alabama","01","010","Tuscaloosa County","125","1250","Tuscaloosa",13646,7147,6499
+"G0101270","1830","Alabama","01","010","Walker County","127","1270","Walker",2202,1138,1064
+"G0101290","1830","Alabama","01","010","Washington County","129","1290","Washington",3474,1818,1656
+"G0101310","1830","Alabama","01","010","Wilcox County","131","1310","Wilcox",9548,4954,4594
+"G0550015","1830","Arkansas Territory",,"055","Arkansas County",,"0015","Arkansas",1426,806,620
+"G0550035","1830","Arkansas Territory",,"055","Chicot County",,"0035","Chicot",1165,645,520
+"G0550055","1830","Arkansas Territory",,"055","Clark County",,"0055","Clark",1369,724,645
+"G0550075","1830","Arkansas Territory",,"055","Conway County",,"0075","Conway",982,538,444
+"G0550095","1830","Arkansas Territory",,"055","Crawford County",,"0095","Crawford",2440,1351,1089
+"G0550115","1830","Arkansas Territory",,"055","Crittenden County",,"0115","Crittenden",1272,798,474
+"G0550135","1830","Arkansas Territory",,"055","Hempstead County",,"0135","Hempstead",2512,1336,1176
+"G0550155","1830","Arkansas Territory",,"055","Hot Spring County",,"0155","Hot Spring",458,265,193
+"G0550175","1830","Arkansas Territory",,"055","Independence County",,"0175","Independence",2031,1093,938
+"G0550195","1830","Arkansas Territory",,"055","Izard County",,"0195","Izard",1266,662,604
+"G0550215","1830","Arkansas Territory",,"055","Jackson County",,"0215","Jackson",333,177,156
+"G0550235","1830","Arkansas Territory",,"055","Jefferson County",,"0235","Jefferson",772,430,342
+"G0550255","1830","Arkansas Territory",,"055","Lafayette County",,"0255","Lafayette",748,418,330
+"G0550275","1830","Arkansas Territory",,"055","Lawrence County",,"0275","Lawrence",2806,1476,1330
+"G0550295","1830","Arkansas Territory",,"055","Miller County",,"0295","Miller",356,200,156
+"G0550315","1830","Arkansas Territory",,"055","Monroe County",,"0315","Monroe",461,246,215
+"G0550335","1830","Arkansas Territory",,"055","Phillips County",,"0335","Phillips",1152,640,512
+"G0550355","1830","Arkansas Territory",,"055","Pope County",,"0355","Pope",1483,799,684
+"G0550375","1830","Arkansas Territory",,"055","Pulaski County",,"0375","Pulaski",2395,1299,1096
+"G0550395","1830","Arkansas Territory",,"055","St Francis County",,"0395","St Francis",1505,823,682
+"G0550415","1830","Arkansas Territory",,"055","Sevier County",,"0415","Sevier",634,320,314
+"G0550435","1830","Arkansas Territory",,"055","Union County",,"0435","Union",640,362,278
+"G0550455","1830","Arkansas Territory",,"055","Washington County",,"0455","Washington",2182,1168,1014
+"G0900010","1830","Connecticut","09","090","Fairfield County","001","0010","Fairfield",47010,23419,23591
+"G0900030","1830","Connecticut","09","090","Hartford County","003","0030","Hartford",51131,25369,25762
+"G0900050","1830","Connecticut","09","090","Litchfield County","005","0050","Litchfield",42858,21464,21394
+"G0900070","1830","Connecticut","09","090","Middlesex County","007","0070","Middlesex",24844,12013,12831
+"G0900090","1830","Connecticut","09","090","New Haven County","009","0090","New Haven",43847,21639,22208
+"G0900110","1830","Connecticut","09","090","New London County","011","0110","New London",42201,20700,21501
+"G0900130","1830","Connecticut","09","090","Tolland County","013","0130","Tolland",18702,9127,9575
+"G0900150","1830","Connecticut","09","090","Windham County","015","0150","Windham",27082,13174,13908
+"G1000010","1830","Delaware","10","100","Kent County","001","0010","Kent",19913,10045,9868
+"G1000030","1830","Delaware","10","100","New Castle County","003","0030","New Castle",29720,14894,14826
+"G1000050","1830","Delaware","10","100","Sussex County","005","0050","Sussex",27115,13594,13521
+"G1100005","1830","District Of Columbia","11","110","Alexandria",,"0005","Alexandria",8241,3699,4542
+"G1100017","1830","District Of Columbia","11","110","Georgetown",,"0017","Georgetown",8441,4063,4378
+"G1100035","1830","District Of Columbia","11","110","Rural Alexandria County",,"0035","Rural Alexandria County",1332,656,676
+"G1100075","1830","District Of Columbia","11","110","Rural Washington county",,"0075","Rural Washington county",2994,1784,1210
+"G1100115","1830","District Of Columbia","11","110","Washington City",,"0115","Washington City",18826,8942,9884
+"G1250015","1830","Florida Territory",,"125","Alachua County",,"0015","Alachua",2204,1207,997
+"G1250075","1830","Florida Territory",,"125","Duval County",,"0075","Duval",1970,1043,927
+"G1250095","1830","Florida Territory",,"125","Escambia County",,"0095","Escambia",2518,1359,1159
+"G1250097","1830","Florida Territory",,"125","Escambia (part) and Walton (part)",,"0097","Escambia (part) and Walton (part)",868,520,348
+"G1250135","1830","Florida Territory",,"125","Gadsden County",,"0135","Gadsden",4895,2561,2334
+"G1250155","1830","Florida Territory",,"125","Hamilton County",,"0155","Hamilton",553,284,269
+"G1250195","1830","Florida Territory",,"125","Jackson County",,"0195","Jackson",3907,2162,1745
+"G1250215","1830","Florida Territory",,"125","Jefferson County",,"0215","Jefferson",3312,1806,1506
+"G1250235","1830","Florida Territory",,"125","Leon County",,"0235","Leon",6494,3483,3011
+"G1250255","1830","Florida Territory",,"125","Madison County",,"0255","Madison",525,271,254
+"G1250275","1830","Florida Territory",,"125","Monroe County",,"0275","Monroe",517,356,161
+"G1250295","1830","Florida Territory",,"125","Mosquito County",,"0295","Mosquito",733,388,345
+"G1250315","1830","Florida Territory",,"125","Nassau County",,"0315","Nassau",1511,779,732
+"G1250355","1830","Florida Territory",,"125","St Johns County",,"0355","St Johns",2538,1257,1281
+"G1250375","1830","Florida Territory",,"125","Walton County",,"0375","Walton",1207,628,579
+"G1250395","1830","Florida Territory",,"125","Washington County",,"0395","Washington",978,500,478
+"G1300010","1830","Georgia","13","130","Appling County","001","0010","Appling",1468,745,723
+"G1300070","1830","Georgia","13","130","Baker County","007","0070","Baker",1253,634,619
+"G1300090","1830","Georgia","13","130","Baldwin County","009","0090","Baldwin",7295,3838,3457
+"G1300210","1830","Georgia","13","130","Bibb County","021","0210","Bibb",7154,3884,3270
+"G1300290","1830","Georgia","13","130","Bryan County","029","0290","Bryan",3139,1564,1575
+"G1300310","1830","Georgia","13","130","Bulloch County","031","0310","Bulloch",2587,1329,1258
+"G1300330","1830","Georgia","13","130","Burke County","033","0330","Burke",11833,6051,5782
+"G1300350","1830","Georgia","13","130","Butts County","035","0350","Butts",4944,2532,2412
+"G1300390","1830","Georgia","13","130","Camden County","039","0390","Camden",4578,2295,2283
+"G1300395","1830","Georgia","13","130","Campbell County",,"0395","Campbell",3323,1735,1588
+"G1300450","1830","Georgia","13","130","Carroll County","045","0450","Carroll",3419,1785,1634
+"G1300510","1830","Georgia","13","130","Chatham County","051","0510","Chatham",14127,6929,7198
+"G1300590","1830","Georgia","13","130","Clarke County","059","0590","Clarke",10176,5051,5125
+"G1300730","1830","Georgia","13","130","Columbia County","073","0730","Columbia",12606,6408,6198
+"G1300770","1830","Georgia","13","130","Coweta County","077","0770","Coweta",5003,2604,2399
+"G1300790","1830","Georgia","13","130","Crawford County","079","0790","Crawford",5313,2787,2526
+"G1300870","1830","Georgia","13","130","Decatur County","087","0870","Decatur",3854,2019,1835
+"G1300890","1830","Georgia","13","130","DeKalb County","089","0890","De Kalb",10042,5080,4962
+"G1300930","1830","Georgia","13","130","Dooly County","093","0930","Dooly",2135,1085,1050
+"G1300990","1830","Georgia","13","130","Early County","099","0990","Early",2051,1025,1026
+"G1301030","1830","Georgia","13","130","Effingham County","103","1030","Effingham",2924,1535,1389
+"G1301050","1830","Georgia","13","130","Elbert County","105","1050","Elbert",12354,6218,6136
+"G1301070","1830","Georgia","13","130","Emanuel County","107","1070","Emanuel",2673,1326,1347
+"G1301130","1830","Georgia","13","130","Fayette County","113","1130","Fayette",5504,2789,2715
+"G1301190","1830","Georgia","13","130","Franklin County","119","1190","Franklin",10107,5063,5044
+"G1301270","1830","Georgia","13","130","Glynn County","127","1270","Glynn",4567,2332,2235
+"G1301330","1830","Georgia","13","130","Greene County","133","1330","Greene",12549,6450,6099
+"G1301350","1830","Georgia","13","130","Gwinnett County","135","1350","Gwinnett",13289,6796,6493
+"G1301370","1830","Georgia","13","130","Habersham County","137","1370","Habersham",10671,5503,5168
+"G1301390","1830","Georgia","13","130","Hall County","139","1390","Hall",11748,5900,5848
+"G1301410","1830","Georgia","13","130","Hancock County","141","1410","Hancock",11820,6045,5775
+"G1301450","1830","Georgia","13","130","Harris County","145","1450","Harris",5105,2707,2398
+"G1301510","1830","Georgia","13","130","Henry County","151","1510","Henry",10566,5307,5259
+"G1301530","1830","Georgia","13","130","Houston County","153","1530","Houston",7369,3745,3624
+"G1301550","1830","Georgia","13","130","Irwin County","155","1550","Irwin",1180,607,573
+"G1301570","1830","Georgia","13","130","Jackson County","157","1570","Jackson",9004,4545,4459
+"G1301590","1830","Georgia","13","130","Jasper County","159","1590","Jasper",13131,6728,6403
+"G1301630","1830","Georgia","13","130","Jefferson County","163","1630","Jefferson",7309,3662,3647
+"G1301690","1830","Georgia","13","130","Jones County","169","1690","Jones",13345,6847,6498
+"G1301750","1830","Georgia","13","130","Laurens County","175","1750","Laurens",5589,2814,2775
+"G1301770","1830","Georgia","13","130","Lee County","177","1770","Lee",1680,886,794
+"G1301790","1830","Georgia","13","130","Liberty County","179","1790","Liberty",7233,3580,3653
+"G1301810","1830","Georgia","13","130","Lincoln County","181","1810","Lincoln",6145,3107,3038
+"G1301850","1830","Georgia","13","130","Lowndes County","185","1850","Lowndes",2453,1228,1225
+"G1301910","1830","Georgia","13","130","McIntosh County","191","1910","Mcintosh",4998,2534,2464
+"G1301950","1830","Georgia","13","130","Madison County","195","1950","Madison",4646,2279,2367
+"G1301970","1830","Georgia","13","130","Marion County","197","1970","Marion",1436,742,694
+"G1301990","1830","Georgia","13","130","Meriwether County","199","1990","Meriwether",4422,2340,2082
+"G1302070","1830","Georgia","13","130","Monroe County","207","2070","Monroe",16202,8205,7997
+"G1302090","1830","Georgia","13","130","Montgomery County","209","2090","Montgomery",1269,642,627
+"G1302110","1830","Georgia","13","130","Morgan County","211","2110","Morgan",12046,6298,5748
+"G1302150","1830","Georgia","13","130","Muscogee County","215","2150","Muscogee",3508,1952,1556
+"G1302170","1830","Georgia","13","130","Newton County","217","2170","Newton",11155,5663,5492
+"G1302210","1830","Georgia","13","130","Oglethorpe County","221","2210","Oglethorpe",13618,6962,6656
+"G1302310","1830","Georgia","13","130","Pike County","231","2310","Pike",6149,3074,3075
+"G1302350","1830","Georgia","13","130","Pulaski County","235","2350","Pulaski",4906,2530,2376
+"G1302370","1830","Georgia","13","130","Putnam County","237","2370","Putnam",13261,6746,6515
+"G1302410","1830","Georgia","13","130","Rabun County","241","2410","Rabun",2176,1109,1067
+"G1302430","1830","Georgia","13","130","Randolph County","243","2430","Randolph",2191,1162,1029
+"G1302450","1830","Georgia","13","130","Richmond County","245","2450","Richmond",11644,5966,5678
+"G1302510","1830","Georgia","13","130","Screven County","251","2510","Screven",4776,2407,2369
+"G1302630","1830","Georgia","13","130","Talbot County","263","2630","Talbot",5940,3063,2877
+"G1302650","1830","Georgia","13","130","Taliaferro County","265","2650","Taliaferro",4934,2508,2426
+"G1302670","1830","Georgia","13","130","Tattnall County","267","2670","Tattnall",2040,1026,1014
+"G1302710","1830","Georgia","13","130","Telfair County","271","2710","Telfair",2136,1098,1038
+"G1302750","1830","Georgia","13","130","Thomas County","275","2750","Thomas",3299,1710,1589
+"G1302850","1830","Georgia","13","130","Troup County","285","2850","Troup",5799,2966,2833
+"G1302890","1830","Georgia","13","130","Twiggs County","289","2890","Twiggs",8031,4100,3931
+"G1302930","1830","Georgia","13","130","Upson County","293","2930","Upson",7013,3582,3431
+"G1302970","1830","Georgia","13","130","Walton County","297","2970","Walton",10929,5462,5467
+"G1302990","1830","Georgia","13","130","Ware County","299","2990","Ware",1205,625,580
+"G1303010","1830","Georgia","13","130","Warren County","301","3010","Warren",10946,5525,5421
+"G1303030","1830","Georgia","13","130","Washington County","303","3030","Washington",9820,4980,4840
+"G1303050","1830","Georgia","13","130","Wayne County","305","3050","Wayne",963,468,495
+"G1303170","1830","Georgia","13","130","Wilkes County","317","3170","Wilkes",14237,7184,7053
+"G1303190","1830","Georgia","13","130","Wilkinson County","319","3190","Wilkinson",6513,3358,3155
+"G1700010","1830","Illinois","17","170","Adams County","001","0010","Adams",2186,1197,989
+"G1700030","1830","Illinois","17","170","Alexander County","003","0030","Alexander",1390,728,662
+"G1700050","1830","Illinois","17","170","Bond County","005","0050","Bond",3124,1628,1496
+"G1700130","1830","Illinois","17","170","Calhoun County","013","0130","Calhoun",1090,679,411
+"G1700230","1830","Illinois","17","170","Clark County","023","0230","Clark",3940,2081,1859
+"G1700250","1830","Illinois","17","170","Clay County","025","0250","Clay",755,389,366
+"G1700270","1830","Illinois","17","170","Clinton County","027","0270","Clinton",2330,1260,1070
+"G1700330","1830","Illinois","17","170","Crawford County","033","0330","Crawford",3117,1608,1509
+"G1700450","1830","Illinois","17","170","Edgar County","045","0450","Edgar",4071,2129,1942
+"G1700470","1830","Illinois","17","170","Edwards County","047","0470","Edwards",1649,880,769
+"G1700510","1830","Illinois","17","170","Fayette County","051","0510","Fayette",2704,1406,1298
+"G1700550","1830","Illinois","17","170","Franklin County","055","0550","Franklin",4083,2097,1986
+"G1700570","1830","Illinois","17","170","Fulton County","057","0570","Fulton",1841,996,845
+"G1700590","1830","Illinois","17","170","Gallatin County","059","0590","Gallatin",7405,3878,3527
+"G1700610","1830","Illinois","17","170","Greene County","061","0610","Greene",7674,4051,3623
+"G1700650","1830","Illinois","17","170","Hamilton County","065","0650","Hamilton",2616,1382,1234
+"G1700670","1830","Illinois","17","170","Hancock County","067","0670","Hancock",483,264,219
+"G1700730","1830","Illinois","17","170","Henry County","073","0730","Henry",41,19,22
+"G1700770","1830","Illinois","17","170","Jackson County","077","0770","Jackson",1828,970,858
+"G1700810","1830","Illinois","17","170","Jefferson County","081","0810","Jefferson",2555,1307,1248
+"G1700850","1830","Illinois","17","170","Jo Daviess County","085","0850","Jo Daviess",2111,1407,704
+"G1700870","1830","Illinois","17","170","Johnson County","087","0870","Johnson",1596,878,718
+"G1700950","1830","Illinois","17","170","Knox County","095","0950","Knox",274,148,126
+"G1701010","1830","Illinois","17","170","Lawrence County","101","1010","Lawrence",3668,1926,1742
+"G1701150","1830","Illinois","17","170","Macon County","115","1150","Macon",1122,602,520
+"G1701170","1830","Illinois","17","170","Macoupin County","117","1170","Macoupin",1990,1049,941
+"G1701190","1830","Illinois","17","170","Madison County","119","1190","Madison",6221,3336,2885
+"G1701210","1830","Illinois","17","170","Marion County","121","1210","Marion",2125,1094,1031
+"G1701310","1830","Illinois","17","170","Mercer County","131","1310","Mercer",26,15,11
+"G1701330","1830","Illinois","17","170","Monroe County","133","1330","Monroe",2000,1113,887
+"G1701350","1830","Illinois","17","170","Montgomery County","135","1350","Montgomery",2953,1570,1383
+"G1701370","1830","Illinois","17","170","Morgan County","137","1370","Morgan",12714,6605,6109
+"G1701450","1830","Illinois","17","170","Perry County","145","1450","Perry",1215,628,587
+"G1701490","1830","Illinois","17","170","Pike County","149","1490","Pike",2396,1330,1066
+"G1701510","1830","Illinois","17","170","Pope County","151","1510","Pope",3316,1678,1638
+"G1701550","1830","Illinois","17","170","Putnam County","155","1550","Putnam",1310,807,503
+"G1701570","1830","Illinois","17","170","Randolph County","157","1570","Randolph",4429,2326,2103
+"G1701630","1830","Illinois","17","170","St. Clair County","163","1630","St Clair",7078,3776,3302
+"G1701670","1830","Illinois","17","170","Sangamon County","167","1670","Sangamon",12960,6619,6341
+"G1701690","1830","Illinois","17","170","Schuyler County","169","1690","Schuyler",2959,1550,1409
+"G1701730","1830","Illinois","17","170","Shelby County","173","1730","Shelby",2972,1542,1430
+"G1701790","1830","Illinois","17","170","Tazewell County","179","1790","Tazewell",4716,2586,2130
+"G1701810","1830","Illinois","17","170","Union County","181","1810","Union",3239,1683,1556
+"G1701830","1830","Illinois","17","170","Vermilion County","183","1830","Vermilion",5836,2998,2838
+"G1701850","1830","Illinois","17","170","Wabash County","185","1850","Wabash",2710,1378,1332
+"G1701870","1830","Illinois","17","170","Warren County","187","1870","Warren",308,187,121
+"G1701890","1830","Illinois","17","170","Washington County","189","1890","Washington",1675,888,787
+"G1701910","1830","Illinois","17","170","Wayne County","191","1910","Wayne",2553,1360,1193
+"G1701930","1830","Illinois","17","170","White County","193","1930","White",6091,3191,2900
+"G1800030","1830","Indiana","18","180","Allen County","003","0030","Allen",996,568,428
+"G1800050","1830","Indiana","18","180","Bartholomew County","005","0050","Bartholomew",5476,2810,2666
+"G1800110","1830","Indiana","18","180","Boone County","011","0110","Boone",621,321,300
+"G1800150","1830","Indiana","18","180","Carroll County","015","0150","Carroll",1611,879,732
+"G1800170","1830","Indiana","18","180","Cass County","017","0170","Cass",1162,728,434
+"G1800190","1830","Indiana","18","180","Clark County","019","0190","Clark",10686,5499,5187
+"G1800210","1830","Indiana","18","180","Clay County","021","0210","Clay",1616,822,794
+"G1800230","1830","Indiana","18","180","Clinton County","023","0230","Clinton",1423,766,657
+"G1800250","1830","Indiana","18","180","Crawford County","025","0250","Crawford",3238,1676,1562
+"G1800270","1830","Indiana","18","180","Daviess County","027","0270","Daviess",4543,2350,2193
+"G1800290","1830","Indiana","18","180","Dearborn County","029","0290","Dearborn",13974,7259,6715
+"G1800310","1830","Indiana","18","180","Decatur County","031","0310","Decatur",5887,2951,2936
+"G1800350","1830","Indiana","18","180","Delaware County","035","0350","Delaware",2374,1236,1138
+"G1800370","1830","Indiana","18","180","Dubois County","037","0370","Dubois",1778,936,842
+"G1800390","1830","Indiana","18","180","Elkhart County","039","0390","Elkhart",935,513,422
+"G1800410","1830","Indiana","18","180","Fayette County","041","0410","Fayette",9112,4683,4429
+"G1800430","1830","Indiana","18","180","Floyd County","043","0430","Floyd",6361,3366,2995
+"G1800450","1830","Indiana","18","180","Fountain County","045","0450","Fountain",7619,3993,3626
+"G1800470","1830","Indiana","18","180","Franklin County","047","0470","Franklin",10190,5228,4962
+"G1800510","1830","Indiana","18","180","Gibson County","051","0510","Gibson",5418,2789,2629
+"G1800550","1830","Indiana","18","180","Greene County","055","0550","Greene",4242,2209,2033
+"G1800570","1830","Indiana","18","180","Hamilton County","057","0570","Hamilton",1757,923,834
+"G1800590","1830","Indiana","18","180","Hancock County","059","0590","Hancock",1436,726,710
+"G1800610","1830","Indiana","18","180","Harrison County","061","0610","Harrison",10273,5121,5152
+"G1800630","1830","Indiana","18","180","Hendricks County","063","0630","Hendricks",3975,2003,1972
+"G1800650","1830","Indiana","18","180","Henry County","065","0650","Henry",6497,3339,3158
+"G1800710","1830","Indiana","18","180","Jackson County","071","0710","Jackson",4870,2537,2333
+"G1800770","1830","Indiana","18","180","Jefferson County","077","0770","Jefferson",11465,5901,5564
+"G1800790","1830","Indiana","18","180","Jennings County","079","0790","Jennings",3974,2036,1938
+"G1800810","1830","Indiana","18","180","Johnson County","081","0810","Johnson",4019,2107,1912
+"G1800830","1830","Indiana","18","180","Knox County","083","0830","Knox",6525,3504,3021
+"G1800930","1830","Indiana","18","180","Lawrence County","093","0930","Lawrence",9234,4793,4441
+"G1800950","1830","Indiana","18","180","Madison County","095","0950","Madison",2238,1144,1094
+"G1800970","1830","Indiana","18","180","Marion County","097","0970","Marion",7192,3697,3495
+"G1801010","1830","Indiana","18","180","Martin County","101","1010","Martin",2010,1057,953
+"G1801050","1830","Indiana","18","180","Monroe County","105","1050","Monroe",6577,3383,3194
+"G1801070","1830","Indiana","18","180","Montgomery County","107","1070","Montgomery",7317,3820,3497
+"G1801090","1830","Indiana","18","180","Morgan County","109","1090","Morgan",5593,2929,2664
+"G1801170","1830","Indiana","18","180","Orange County","117","1170","Orange",7901,4010,3891
+"G1801190","1830","Indiana","18","180","Owen County","119","1190","Owen",4017,2107,1910
+"G1801210","1830","Indiana","18","180","Parke County","121","1210","Parke",7535,3908,3627
+"G1801230","1830","Indiana","18","180","Perry County","123","1230","Perry",3369,1746,1623
+"G1801250","1830","Indiana","18","180","Pike County","125","1250","Pike",2475,1278,1197
+"G1801290","1830","Indiana","18","180","Posey County","129","1290","Posey",6549,3448,3101
+"G1801330","1830","Indiana","18","180","Putnam County","133","1330","Putnam",8262,4294,3968
+"G1801350","1830","Indiana","18","180","Randolph County","135","1350","Randolph",3912,2022,1890
+"G1801370","1830","Indiana","18","180","Ripley County","137","1370","Ripley",3989,2047,1942
+"G1801390","1830","Indiana","18","180","Rush County","139","1390","Rush",9707,5040,4667
+"G1801410","1830","Indiana","18","180","St. Joseph County","141","1410","St Joseph",287,161,126
+"G1801430","1830","Indiana","18","180","Scott County","143","1430","Scott",3092,1590,1502
+"G1801450","1830","Indiana","18","180","Shelby County","145","1450","Shelby",6295,3240,3055
+"G1801470","1830","Indiana","18","180","Spencer County","147","1470","Spencer",3196,1684,1512
+"G1801530","1830","Indiana","18","180","Sullivan County","153","1530","Sullivan",4630,2401,2229
+"G1801550","1830","Indiana","18","180","Switzerland County","155","1550","Switzerland",7028,3632,3396
+"G1801570","1830","Indiana","18","180","Tippecanoe County","157","1570","Tippecanoe",7187,3809,3378
+"G1801610","1830","Indiana","18","180","Union County","161","1610","Union",7944,4034,3910
+"G1801630","1830","Indiana","18","180","Vanderburgh County","163","1630","Vanderburgh",2611,1349,1262
+"G1801650","1830","Indiana","18","180","Vermillion County","165","1650","Vermillion",5692,3012,2680
+"G1801670","1830","Indiana","18","180","Vigo County","167","1670","Vigo",5766,3087,2679
+"G1801710","1830","Indiana","18","180","Warren County","171","1710","Warren",2861,1514,1347
+"G1801730","1830","Indiana","18","180","Warrick County","173","1730","Warrick",2877,1538,1339
+"G1801750","1830","Indiana","18","180","Washington County","175","1750","Washington",13064,6682,6382
+"G1801770","1830","Indiana","18","180","Wayne County","177","1770","Wayne",18571,9507,9064
+"G2100010","1830","Kentucky","21","210","Adair County","001","0010","Adair",8217,4172,4045
+"G2100030","1830","Kentucky","21","210","Allen County","003","0030","Allen",6485,3252,3233
+"G2100050","1830","Kentucky","21","210","Anderson County","005","0050","Anderson",4520,2298,2222
+"G2100090","1830","Kentucky","21","210","Barren County","009","0090","Barren",15079,7751,7328
+"G2100110","1830","Kentucky","21","210","Bath County","011","0110","Bath",8799,4443,4356
+"G2100150","1830","Kentucky","21","210","Boone County","015","0150","Boone",9075,4549,4526
+"G2100170","1830","Kentucky","21","210","Bourbon County","017","0170","Bourbon",18436,9502,8934
+"G2100230","1830","Kentucky","21","210","Bracken County","023","0230","Bracken",6518,3395,3123
+"G2100270","1830","Kentucky","21","210","Breckinridge County","027","0270","Breckinridge",7345,3733,3612
+"G2100290","1830","Kentucky","21","210","Bullitt County","029","0290","Bullitt",5652,2836,2816
+"G2100310","1830","Kentucky","21","210","Butler County","031","0310","Butler",3058,1549,1509
+"G2100330","1830","Kentucky","21","210","Caldwell County","033","0330","Caldwell",8324,4347,3977
+"G2100350","1830","Kentucky","21","210","Calloway County","035","0350","Calloway",5164,2680,2484
+"G2100370","1830","Kentucky","21","210","Campbell County","037","0370","Campbell",9883,5172,4711
+"G2100450","1830","Kentucky","21","210","Casey County","045","0450","Casey",4342,2170,2172
+"G2100470","1830","Kentucky","21","210","Christian County","047","0470","Christian",12684,6412,6272
+"G2100490","1830","Kentucky","21","210","Clark County","049","0490","Clark",13051,6582,6469
+"G2100510","1830","Kentucky","21","210","Clay County","051","0510","Clay",3548,1837,1711
+"G2100570","1830","Kentucky","21","210","Cumberland County","057","0570","Cumberland",8624,4349,4275
+"G2100590","1830","Kentucky","21","210","Daviess County","059","0590","Daviess",5209,2675,2534
+"G2100610","1830","Kentucky","21","210","Edmonson County","061","0610","Edmonson",2642,1388,1254
+"G2100650","1830","Kentucky","21","210","Estill County","065","0650","Estill",4618,2424,2194
+"G2100670","1830","Kentucky","21","210","Fayette County","067","0670","Fayette",25098,13121,11977
+"G2100690","1830","Kentucky","21","210","Fleming County","069","0690","Fleming",13499,6768,6731
+"G2100710","1830","Kentucky","21","210","Floyd County","071","0710","Floyd",4347,2243,2104
+"G2100730","1830","Kentucky","21","210","Franklin County","073","0730","Franklin",9254,4767,4487
+"G2100770","1830","Kentucky","21","210","Gallatin County","077","0770","Gallatin",6674,3460,3214
+"G2100790","1830","Kentucky","21","210","Garrard County","079","0790","Garrard",11871,6010,5861
+"G2100810","1830","Kentucky","21","210","Grant County","081","0810","Grant",2986,1528,1458
+"G2100830","1830","Kentucky","21","210","Graves County","083","0830","Graves",2504,1307,1197
+"G2100850","1830","Kentucky","21","210","Grayson County","085","0850","Grayson",3880,1907,1973
+"G2100870","1830","Kentucky","21","210","Green County","087","0870","Green",13138,6946,6192
+"G2100890","1830","Kentucky","21","210","Greenup County","089","0890","Greenup",5852,3080,2772
+"G2100910","1830","Kentucky","21","210","Hancock County","091","0910","Hancock",1515,752,763
+"G2100930","1830","Kentucky","21","210","Hardin County","093","0930","Hardin",12849,6584,6265
+"G2100950","1830","Kentucky","21","210","Harlan County","095","0950","Harlan",2929,1491,1438
+"G2100970","1830","Kentucky","21","210","Harrison County","097","0970","Harrison",13234,6700,6534
+"G2100990","1830","Kentucky","21","210","Hart County","099","0990","Hart",5191,2653,2538
+"G2101010","1830","Kentucky","21","210","Henderson County","101","1010","Henderson",6659,3371,3288
+"G2101030","1830","Kentucky","21","210","Henry County","103","1030","Henry",11387,5765,5622
+"G2101050","1830","Kentucky","21","210","Hickman County","105","1050","Hickman",5198,2737,2461
+"G2101070","1830","Kentucky","21","210","Hopkins County","107","1070","Hopkins",6763,3445,3318
+"G2101110","1830","Kentucky","21","210","Jefferson County","111","1110","Jefferson",23979,13428,10551
+"G2101130","1830","Kentucky","21","210","Jessamine County","113","1130","Jessamine",9960,5070,4890
+"G2101210","1830","Kentucky","21","210","Knox County","121","1210","Knox",4315,2153,2162
+"G2101250","1830","Kentucky","21","210","Laurel County","125","1250","Laurel",2206,1181,1025
+"G2101270","1830","Kentucky","21","210","Lawrence County","127","1270","Lawrence",3900,2030,1870
+"G2101350","1830","Kentucky","21","210","Lewis County","135","1350","Lewis",5229,2629,2600
+"G2101370","1830","Kentucky","21","210","Lincoln County","137","1370","Lincoln",11002,5514,5488
+"G2101390","1830","Kentucky","21","210","Livingston County","139","1390","Livingston",5971,3123,2848
+"G2101410","1830","Kentucky","21","210","Logan County","141","1410","Logan",13012,6495,6517
+"G2101450","1830","Kentucky","21","210","McCracken County","145","1450","Mccracken",1297,687,610
+"G2101510","1830","Kentucky","21","210","Madison County","151","1510","Madison",18751,9458,9293
+"G2101610","1830","Kentucky","21","210","Mason County","161","1610","Mason",16199,8335,7864
+"G2101630","1830","Kentucky","21","210","Meade County","163","1630","Meade",4131,2144,1987
+"G2101670","1830","Kentucky","21","210","Mercer County","167","1670","Mercer",17694,9017,8677
+"G2101710","1830","Kentucky","21","210","Monroe County","171","1710","Monroe",5340,2688,2652
+"G2101730","1830","Kentucky","21","210","Montgomery County","173","1730","Montgomery",10240,5094,5146
+"G2101750","1830","Kentucky","21","210","Morgan County","175","1750","Morgan",2857,1496,1361
+"G2101770","1830","Kentucky","21","210","Muhlenberg County","177","1770","Muhlenberg",5340,2748,2592
+"G2101790","1830","Kentucky","21","210","Nelson County","179","1790","Nelson",14932,7515,7417
+"G2101810","1830","Kentucky","21","210","Nicholas County","181","1810","Nicholas",8834,4400,4434
+"G2101830","1830","Kentucky","21","210","Ohio County","183","1830","Ohio",4715,2403,2312
+"G2101850","1830","Kentucky","21","210","Oldham County","185","1850","Oldham",9588,4819,4769
+"G2101870","1830","Kentucky","21","210","Owen County","187","1870","Owen",5786,3001,2785
+"G2101910","1830","Kentucky","21","210","Pendleton County","191","1910","Pendleton",3863,1995,1868
+"G2101930","1830","Kentucky","21","210","Perry County","193","1930","Perry",3330,1707,1623
+"G2101950","1830","Kentucky","21","210","Pike County","195","1950","Pike",2677,1387,1290
+"G2101990","1830","Kentucky","21","210","Pulaski County","199","1990","Pulaski",9500,4826,4674
+"G2102030","1830","Kentucky","21","210","Rockcastle County","203","2030","Rockcastle",2865,1517,1348
+"G2102070","1830","Kentucky","21","210","Russell County","207","2070","Russell",3879,1972,1907
+"G2102090","1830","Kentucky","21","210","Scott County","209","2090","Scott",14677,7426,7251
+"G2102110","1830","Kentucky","21","210","Shelby County","211","2110","Shelby",19030,9594,9436
+"G2102130","1830","Kentucky","21","210","Simpson County","213","2130","Simpson",5815,2947,2868
+"G2102150","1830","Kentucky","21","210","Spencer County","215","2150","Spencer",6812,3450,3362
+"G2102190","1830","Kentucky","21","210","Todd County","219","2190","Todd",8680,4411,4269
+"G2102210","1830","Kentucky","21","210","Trigg County","221","2210","Trigg",5916,3093,2823
+"G2102250","1830","Kentucky","21","210","Union County","225","2250","Union",4764,2479,2285
+"G2102270","1830","Kentucky","21","210","Warren County","227","2270","Warren",10949,5522,5427
+"G2102290","1830","Kentucky","21","210","Washington County","229","2290","Washington",19017,9559,9458
+"G2102310","1830","Kentucky","21","210","Wayne County","231","2310","Wayne",8685,4447,4238
+"G2102350","1830","Kentucky","21","210","Whitley County","235","2350","Whitley",3806,1941,1865
+"G2102390","1830","Kentucky","21","210","Woodford County","239","2390","Woodford",12273,6232,6041
+"G2200050","1830","Louisiana","22","220","Ascension Parish","005","0050","Ascension",5426,3033,2393
+"G2200070","1830","Louisiana","22","220","Assumption Parish","007","0070","Assumption",5669,3007,2662
+"G2200090","1830","Louisiana","22","220","Avoyelles Parish","009","0090","Avoyelles",3484,1817,1667
+"G2200250","1830","Louisiana","22","220","Catahoula Parish","025","0250","Catahoula",2581,1386,1195
+"G2200270","1830","Louisiana","22","220","Claiborne Parish","027","0270","Claiborne",1764,927,837
+"G2200290","1830","Louisiana","22","220","Concordia Parish","029","0290","Concordia",4662,2576,2086
+"G2200330","1830","Louisiana","22","220","East Baton Rouge Parish","033","0330","East Baton Rouge",6698,3657,3041
+"G2200370","1830","Louisiana","22","220","East Feliciana Parish","037","0370","East Feliciana",8247,4345,3902
+"G2200470","1830","Louisiana","22","220","Iberville Parish","047","0470","Iberville",7049,3912,3137
+"G2200510","1830","Louisiana","22","220","Jefferson Parish","051","0510","Jefferson",6846,4190,2656
+"G2200550","1830","Louisiana","22","220","Lafayette Parish","055","0550","Lafayette",5653,2979,2674
+"G2200570","1830","Louisiana","22","220","Lafourche Parish","057","0570","Lafourche",5503,2879,2624
+"G2200690","1830","Louisiana","22","220","Natchitoches Parish","069","0690","Natchitoches",7905,4232,3673
+"G2200710","1830","Louisiana","22","220","Orleans Parish","071","0710","Orleans",49826,24452,25374
+"G2200730","1830","Louisiana","22","220","Ouachita Parish","073","0730","Ouachita",5140,2696,2444
+"G2200750","1830","Louisiana","22","220","Plaquemines Parish","075","0750","Plaquemines",4489,2652,1837
+"G2200770","1830","Louisiana","22","220","Pointe Coupee Parish","077","0770","Pointe Coupee",5936,3025,2911
+"G2200790","1830","Louisiana","22","220","Rapides Parish","079","0790","Rapides",7575,4011,3564
+"G2200870","1830","Louisiana","22","220","St. Bernard Parish","087","0870","St Bernard",3356,2093,1263
+"G2200890","1830","Louisiana","22","220","St. Charles Parish","089","0890","St Charles",5147,3222,1925
+"G2200910","1830","Louisiana","22","220","St. Helena Parish","091","0910","St Helena",4028,2078,1950
+"G2200930","1830","Louisiana","22","220","St. James Parish","093","0930","St James",7646,4250,3396
+"G2200950","1830","Louisiana","22","220","St. John the Baptist Parish","095","0950","St John The Baptist",5677,3252,2425
+"G2200970","1830","Louisiana","22","220","St. Landry Parish","097","0970","St Landry",12591,6535,6056
+"G2200990","1830","Louisiana","22","220","St. Martin Parish","099","0990","St Martin",7205,3950,3255
+"G2201010","1830","Louisiana","22","220","St. Mary Parish","101","1010","St Mary",6442,3623,2819
+"G2201030","1830","Louisiana","22","220","St. Tammany Parish","103","1030","St Tammany",2864,1640,1224
+"G2201090","1830","Louisiana","22","220","Terrebonne Parish","109","1090","Terrebonne",2121,1132,989
+"G2201170","1830","Louisiana","22","220","Washington Parish","117","1170","Washington",2286,1185,1101
+"G2201210","1830","Louisiana","22","220","West Baton Rouge Parish","121","1210","West Baton Rouge",3084,1696,1388
+"G2201250","1830","Louisiana","22","220","West Feliciana Parish","125","1250","West Feliciana",8629,4424,4205
+"G2300050","1830","Maine","23","230","Cumberland County","005","0050","Cumberland",60102,29378,30724
+"G2300090","1830","Maine","23","230","Hancock County","009","0090","Hancock",24336,12352,11984
+"G2300110","1830","Maine","23","230","Kennebec County","011","0110","Kennebec",52485,26305,26180
+"G2300150","1830","Maine","23","230","Lincoln County","015","0150","Lincoln",57192,28604,28588
+"G2300170","1830","Maine","23","230","Oxford County","017","0170","Oxford",35219,17694,17525
+"G2300190","1830","Maine","23","230","Penobscot County","019","0190","Penobscot",31530,16744,14786
+"G2300250","1830","Maine","23","230","Somerset County","025","0250","Somerset",35787,18299,17488
+"G2300270","1830","Maine","23","230","Waldo County","027","0270","Waldo",29788,15211,14577
+"G2300290","1830","Maine","23","230","Washington County","029","0290","Washington",21294,11376,9918
+"G2300310","1830","Maine","23","230","York County","031","0310","York",51722,25336,26386
+"G2400010","1830","Maryland","24","240","Allegany County","001","0010","Allegany",10609,5477,5132
+"G2400030","1830","Maryland","24","240","Anne Arundel County","003","0030","Anne Arundel",28295,14527,13768
+"G2400050","1830","Maryland","24","240","Baltimore County","005","0050","Baltimore",40250,21073,19177
+"G2400090","1830","Maryland","24","240","Calvert County","009","0090","Calvert",8900,4504,4396
+"G2400110","1830","Maryland","24","240","Caroline County","011","0110","Caroline",9070,4504,4566
+"G2400150","1830","Maryland","24","240","Cecil County","015","0150","Cecil",15432,7917,7515
+"G2400170","1830","Maryland","24","240","Charles County","017","0170","Charles",17769,8885,8884
+"G2400190","1830","Maryland","24","240","Dorchester County","019","0190","Dorchester",18686,9461,9225
+"G2400210","1830","Maryland","24","240","Frederick County","021","0210","Frederick",45789,23281,22508
+"G2400250","1830","Maryland","24","240","Harford County","025","0250","Harford",16319,8288,8031
+"G2400290","1830","Maryland","24","240","Kent County","029","0290","Kent",10501,5434,5067
+"G2400310","1830","Maryland","24","240","Montgomery County","031","0310","Montgomery",19816,11191,8625
+"G2400330","1830","Maryland","24","240","Prince George's County","033","0330","Prince Georges",20474,10211,10263
+"G2400350","1830","Maryland","24","240","Queen Anne's County","035","0350","Queen Anne's",14397,7290,7107
+"G2400370","1830","Maryland","24","240","St. Mary's County","037","0370","St Mary's",13459,6847,6612
+"G2400390","1830","Maryland","24","240","Somerset County","039","0390","Somerset",20166,10177,9989
+"G2400410","1830","Maryland","24","240","Talbot County","041","0410","Talbot",12947,6561,6386
+"G2400430","1830","Maryland","24","240","Washington County","043","0430","Washington",25268,13031,12237
+"G2400470","1830","Maryland","24","240","Worcester County","047","0470","Worcester",18273,9181,9092
+"G2405100","1830","Maryland","24","240","Baltimore city","510","5100","Baltimore City",80620,37848,42772
+"G2500010","1830","Massachusetts","25","250","Barnstable County","001","0010","Barnstable",28514,14077,14437
+"G2500030","1830","Massachusetts","25","250","Berkshire County","003","0030","Berkshire",37835,18792,19043
+"G2500050","1830","Massachusetts","25","250","Bristol County","005","0050","Bristol",49592,23976,25616
+"G2500070","1830","Massachusetts","25","250","Dukes County","007","0070","Dukes",3517,1728,1789
+"G2500090","1830","Massachusetts","25","250","Essex County","009","0090","Essex",82859,39635,43224
+"G2500110","1830","Massachusetts","25","250","Franklin County","011","0110","Franklin",29501,14644,14857
+"G2500130","1830","Massachusetts","25","250","Hampden County","013","0130","Hampden",31639,15464,16175
+"G2500150","1830","Massachusetts","25","250","Hampshire County","015","0150","Hampshire",30254,15112,15142
+"G2500170","1830","Massachusetts","25","250","Middlesex County","017","0170","Middlesex",77961,38352,39609
+"G2500190","1830","Massachusetts","25","250","Nantucket County","019","0190","Nantucket",7202,3471,3731
+"G2500210","1830","Massachusetts","25","250","Norfolk County","021","0210","Norfolk",41972,20525,21447
+"G2500230","1830","Massachusetts","25","250","Plymouth County","023","0230","Plymouth",43044,21092,21952
+"G2500250","1830","Massachusetts","25","250","Suffolk County","025","0250","Suffolk",62163,29457,32706
+"G2500270","1830","Massachusetts","25","250","Worcester County","027","0270","Worcester",84355,41718,42637
+"G2650025","1830","Michigan Territory",,"265","Berrien County",,"0025","Berrien",325,205,120
+"G2650035","1830","Michigan Territory",,"265","Brown County",,"0035","Brown",1356,945,411
+"G2650055","1830","Michigan Territory",,"265","Cass County",,"0055","Cass",919,505,414
+"G2650075","1830","Michigan Territory",,"265","Chippewa County",,"0075","Chippewa",626,449,177
+"G2650095","1830","Michigan Territory",,"265","Crawford County",,"0095","Crawford",692,528,164
+"G2650175","1830","Michigan Territory",,"265","Iowa County",,"0175","Iowa",1587,1078,509
+"G2650195","1830","Michigan Territory",,"265","Lenawee County",,"0195","Lenawee",1491,836,655
+"G2650215","1830","Michigan Territory",,"265","Macomb County",,"0215","Macomb",2413,1326,1087
+"G2650235","1830","Michigan Territory",,"265","Michilimackinac County",,"0235","Michilimackinac",877,571,306
+"G2650255","1830","Michigan Territory",,"265","Monroe County",,"0255","Monroe",3187,1708,1479
+"G2650275","1830","Michigan Territory",,"265","Oakland County",,"0275","Oakland",4911,2724,2187
+"G2650295","1830","Michigan Territory",,"265","St Clair County",,"0295","St Clair",1114,665,449
+"G2650315","1830","Michigan Territory",,"265","St Joseph County",,"0315","St Joseph",1313,768,545
+"G2650335","1830","Michigan Territory",,"265","Van Buren County",,"0335","Van Buren",5,3,2
+"G2650355","1830","Michigan Territory",,"265","Washtenaw County",,"0355","Washtenaw",4042,2266,1776
+"G2650375","1830","Michigan Territory",,"265","Wayne County",,"0375","Wayne",6781,3772,3009
+"G2800010","1830","Mississippi","28","280","Adams County","001","0010","Adams",14937,7823,7114
+"G2800050","1830","Mississippi","28","280","Amite County","005","0050","Amite",7934,4226,3708
+"G2800210","1830","Mississippi","28","280","Claiborne County","021","0210","Claiborne",9787,5071,4716
+"G2800290","1830","Mississippi","28","280","Copiah County","029","0290","Copiah",7001,3666,3335
+"G2800310","1830","Mississippi","28","280","Covington County","031","0310","Covington",2551,1313,1238
+"G2800370","1830","Mississippi","28","280","Franklin County","037","0370","Franklin",4622,2405,2217
+"G2800410","1830","Mississippi","28","280","Greene County","041","0410","Greene",1854,976,878
+"G2800450","1830","Mississippi","28","280","Hancock County","045","0450","Hancock",1962,1020,942
+"G2800490","1830","Mississippi","28","280","Hinds County","049","0490","Hinds",8645,4582,4063
+"G2800590","1830","Mississippi","28","280","Jackson County","059","0590","Jackson",1792,920,872
+"G2800630","1830","Mississippi","28","280","Jefferson County","063","0630","Jefferson",9755,5152,4603
+"G2800670","1830","Mississippi","28","280","Jones County","067","0670","Jones",1471,745,726
+"G2800770","1830","Mississippi","28","280","Lawrence County","077","0770","Lawrence",5293,2826,2467
+"G2800870","1830","Mississippi","28","280","Lowndes County","087","0870","Lowndes",3173,1670,1503
+"G2800890","1830","Mississippi","28","280","Madison County","089","0890","Madison",4973,2672,2301
+"G2800910","1830","Mississippi","28","280","Marion County","091","0910","Marion",3691,1959,1732
+"G2800950","1830","Mississippi","28","280","Monroe County","095","0950","Monroe",3861,2037,1824
+"G2801110","1830","Mississippi","28","280","Perry County","111","1110","Perry",2300,1139,1161
+"G2801130","1830","Mississippi","28","280","Pike County","113","1130","Pike",5402,2823,2579
+"G2801210","1830","Mississippi","28","280","Rankin County","121","1210","Rankin",2083,1076,1007
+"G2801270","1830","Mississippi","28","280","Simpson County","127","1270","Simpson",2680,1394,1286
+"G2801490","1830","Mississippi","28","280","Warren County","149","1490","Warren",7861,4234,3627
+"G2801510","1830","Mississippi","28","280","Washington County","151","1510","Washington",1976,1068,908
+"G2801530","1830","Mississippi","28","280","Wayne County","153","1530","Wayne",2781,1459,1322
+"G2801570","1830","Mississippi","28","280","Wilkinson County","157","1570","Wilkinson",11686,6024,5662
+"G2801630","1830","Mississippi","28","280","Yazoo County","163","1630","Yazoo",6550,3573,2977
+"G2900190","1830","Missouri","29","290","Boone County","019","0190","Boone",8859,4588,4271
+"G2900270","1830","Missouri","29","290","Callaway County","027","0270","Callaway",6159,3223,2936
+"G2900310","1830","Missouri","29","290","Cape Girardeau County","031","0310","Cape Girardeau",7445,3883,3562
+"G2900410","1830","Missouri","29","290","Chariton County","041","0410","Chariton",1780,905,875
+"G2900470","1830","Missouri","29","290","Clay County","047","0470","Clay",5338,2792,2546
+"G2900510","1830","Missouri","29","290","Cole County","051","0510","Cole",3023,1565,1458
+"G2900530","1830","Missouri","29","290","Cooper County","053","0530","Cooper",6904,3577,3327
+"G2900550","1830","Missouri","29","290","Crawford County","055","0550","Crawford",1712,947,765
+"G2900710","1830","Missouri","29","290","Franklin County","071","0710","Franklin",3484,1819,1665
+"G2900730","1830","Missouri","29","290","Gasconade County","073","0730","Gasconade",1545,835,710
+"G2900890","1830","Missouri","29","290","Howard County","089","0890","Howard",10854,5665,5189
+"G2900950","1830","Missouri","29","290","Jackson County","095","0950","Jackson",2823,1482,1341
+"G2900990","1830","Missouri","29","290","Jefferson County","099","0990","Jefferson",2592,1367,1225
+"G2901070","1830","Missouri","29","290","Lafayette County","107","1070","Lafayette",2912,1495,1417
+"G2901130","1830","Missouri","29","290","Lincoln County","113","1130","Lincoln",4059,2130,1929
+"G2901230","1830","Missouri","29","290","Madison County","123","1230","Madison",2371,1203,1168
+"G2901270","1830","Missouri","29","290","Marion County","127","1270","Marion",4837,2599,2238
+"G2901390","1830","Missouri","29","290","Montgomery County","139","1390","Montgomery",3902,2018,1884
+"G2901430","1830","Missouri","29","290","New Madrid County","143","1430","New Madrid",2350,1258,1092
+"G2901570","1830","Missouri","29","290","Perry County","157","1570","Perry",3349,1799,1550
+"G2901630","1830","Missouri","29","290","Pike County","163","1630","Pike",6129,3142,2987
+"G2901730","1830","Missouri","29","290","Ralls County","173","1730","Ralls",4375,2308,2067
+"G2901750","1830","Missouri","29","290","Randolph County","175","1750","Randolph",2942,1505,1437
+"G2901770","1830","Missouri","29","290","Ray County","177","1770","Ray",2657,1397,1260
+"G2901830","1830","Missouri","29","290","St. Charles County","183","1830","St Charles",4320,2248,2072
+"G2901860","1830","Missouri","29","290","Ste. Genevieve County","186","1860","Ste Genevieve",2186,1170,1016
+"G2901870","1830","Missouri","29","290","St. Francois County","187","1870","St Francois",2366,1252,1114
+"G2901890","1830","Missouri","29","290","St. Louis County","189","1890","St Louis",14125,7869,6256
+"G2901950","1830","Missouri","29","290","Saline County","195","1950","Saline",2873,1548,1325
+"G2902010","1830","Missouri","29","290","Scott County","201","2010","Scott",2136,1125,1011
+"G2902210","1830","Missouri","29","290","Washington County","221","2210","Washington",6784,3692,3092
+"G2902230","1830","Missouri","29","290","Wayne County","223","2230","Wayne",3264,1722,1542
+"G3300050","1830","New Hampshire","33","330","Cheshire County","005","0050","Cheshire",27016,13396,13620
+"G3300070","1830","New Hampshire","33","330","Coos County","007","0070","Coos",8388,4203,4185
+"G3300090","1830","New Hampshire","33","330","Grafton County","009","0090","Grafton",38682,19267,19415
+"G3300110","1830","New Hampshire","33","330","Hillsborough County","011","0110","Hillsborough",37724,18245,19479
+"G3300130","1830","New Hampshire","33","330","Merrimack County","013","0130","Merrimack",34614,16983,17631
+"G3300150","1830","New Hampshire","33","330","Rockingham County","015","0150","Rockingham",44325,21335,22990
+"G3300170","1830","New Hampshire","33","330","Strafford County","017","0170","Strafford",58910,28213,30697
+"G3300190","1830","New Hampshire","33","330","Sullivan County","019","0190","Sullivan",19669,9817,9852
+"G3400030","1830","New Jersey","34","340","Bergen County","003","0030","Bergen",22412,11664,10748
+"G3400050","1830","New Jersey","34","340","Burlington County","005","0050","Burlington",31107,15411,15696
+"G3400090","1830","New Jersey","34","340","Cape May County","009","0090","Cape May",4936,2521,2415
+"G3400110","1830","New Jersey","34","340","Cumberland County","011","0110","Cumberland",14093,7154,6939
+"G3400130","1830","New Jersey","34","340","Essex County","013","0130","Essex",41911,21270,20641
+"G3400150","1830","New Jersey","34","340","Gloucester County","015","0150","Gloucester",28431,14751,13680
+"G3400190","1830","New Jersey","34","340","Hunterdon County","019","0190","Hunterdon",31060,15411,15649
+"G3400230","1830","New Jersey","34","340","Middlesex County","023","0230","Middlesex",23157,11577,11580
+"G3400250","1830","New Jersey","34","340","Monmouth County","025","0250","Monmouth",29233,14991,14242
+"G3400270","1830","New Jersey","34","340","Morris County","027","0270","Morris",23666,12134,11532
+"G3400330","1830","New Jersey","34","340","Salem County","033","0330","Salem",14155,7217,6938
+"G3400350","1830","New Jersey","34","340","Somerset County","035","0350","Somerset",17689,8824,8865
+"G3400370","1830","New Jersey","34","340","Sussex County","037","0370","Sussex",20346,10467,9879
+"G3400410","1830","New Jersey","34","340","Warren County","041","0410","Warren",18627,9697,8930
+"G3600010","1830","New York","36","360","Albany County","001","0010","Albany",53520,26948,26572
+"G3600030","1830","New York","36","360","Allegany County","003","0030","Allegany",26276,13467,12809
+"G3600070","1830","New York","36","360","Broome County","007","0070","Broome",17579,9063,8516
+"G3600090","1830","New York","36","360","Cattaraugus County","009","0090","Cattaraugus",16724,8850,7874
+"G3600110","1830","New York","36","360","Cayuga County","011","0110","Cayuga",47948,24677,23271
+"G3600130","1830","New York","36","360","Chautauqua County","013","0130","Chautauqua",34671,18133,16538
+"G3600170","1830","New York","36","360","Chenango County","017","0170","Chenango",37238,18796,18442
+"G3600190","1830","New York","36","360","Clinton County","019","0190","Clinton",19344,10070,9274
+"G3600210","1830","New York","36","360","Columbia County","021","0210","Columbia",39907,20102,19805
+"G3600230","1830","New York","36","360","Cortland County","023","0230","Cortland",23791,12027,11764
+"G3600250","1830","New York","36","360","Delaware County","025","0250","Delaware",33024,16891,16133
+"G3600270","1830","New York","36","360","Dutchess County","027","0270","Dutchess",50926,25580,25346
+"G3600290","1830","New York","36","360","Erie County","029","0290","Erie",35719,19029,16690
+"G3600310","1830","New York","36","360","Essex County","031","0310","Essex",19287,10022,9265
+"G3600330","1830","New York","36","360","Franklin County","033","0330","Franklin",11312,5809,5503
+"G3600370","1830","New York","36","360","Genesee County","037","0370","Genesee",52147,26873,25274
+"G3600390","1830","New York","36","360","Greene County","039","0390","Greene",29525,15093,14432
+"G3600410","1830","New York","36","360","Hamilton County","041","0410","Hamilton",1325,671,654
+"G3600430","1830","New York","36","360","Herkimer County","043","0430","Herkimer",35870,18224,17646
+"G3600450","1830","New York","36","360","Jefferson County","045","0450","Jefferson",48493,25177,23316
+"G3600470","1830","New York","36","360","Kings County","047","0470","Kings",20535,10295,10240
+"G3600490","1830","New York","36","360","Lewis County","049","0490","Lewis",15239,7922,7317
+"G3600510","1830","New York","36","360","Livingston County","051","0510","Livingston",27729,14135,13594
+"G3600530","1830","New York","36","360","Madison County","053","0530","Madison",39038,20019,19019
+"G3600550","1830","New York","36","360","Monroe County","055","0550","Monroe",49855,26097,23758
+"G3600570","1830","New York","36","360","Montgomery County","057","0570","Montgomery",43715,21995,21720
+"G3600610","1830","New York","36","360","New York County","061","0610","New York",202589,95014,102098
+"G3600630","1830","New York","36","360","Niagara County","063","0630","Niagara",18482,9764,8718
+"G3600650","1830","New York","36","360","Oneida County","065","0650","Oneida",71326,36191,35135
+"G3600670","1830","New York","36","360","Onondaga County","067","0670","Onondaga",58973,30523,28450
+"G3600690","1830","New York","36","360","Ontario County","069","0690","Ontario",40288,20677,19611
+"G3600710","1830","New York","36","360","Orange County","071","0710","Orange",45366,23062,22304
+"G3600730","1830","New York","36","360","Orleans County","073","0730","Orleans",17732,9257,8475
+"G3600750","1830","New York","36","360","Oswego County","075","0750","Oswego",27119,14100,13019
+"G3600770","1830","New York","36","360","Otsego County","077","0770","Otsego",51372,25673,25699
+"G3600790","1830","New York","36","360","Putnam County","079","0790","Putnam",12628,6357,6271
+"G3600810","1830","New York","36","360","Queens County","081","0810","Queens",22460,11455,11005
+"G3600830","1830","New York","36","360","Rensselaer County","083","0830","Rensselaer",49424,24757,24667
+"G3600850","1830","New York","36","360","Richmond County","085","0850","Richmond",7082,3598,3484
+"G3600870","1830","New York","36","360","Rockland County","087","0870","Rockland",9388,4811,4577
+"G3600890","1830","New York","36","360","St. Lawrence County","089","0890","St Lawrence",36354,18873,17481
+"G3600910","1830","New York","36","360","Saratoga County","091","0910","Saratoga",38679,19419,19260
+"G3600930","1830","New York","36","360","Schenectady County","093","0930","Schenectady",12347,6256,6091
+"G3600950","1830","New York","36","360","Schoharie County","095","0950","Schoharie",27902,14035,13867
+"G3600990","1830","New York","36","360","Seneca County","099","0990","Seneca",21041,10764,10277
+"G3601010","1830","New York","36","360","Steuben County","101","1010","Steuben",33851,17501,16350
+"G3601030","1830","New York","36","360","Suffolk County","103","1030","Suffolk",26780,13416,13364
+"G3601050","1830","New York","36","360","Sullivan County","105","1050","Sullivan",12364,6523,5841
+"G3601070","1830","New York","36","360","Tioga County","107","1070","Tioga",27690,14387,13303
+"G3601090","1830","New York","36","360","Tompkins County","109","1090","Tompkins",36545,18499,18046
+"G3601110","1830","New York","36","360","Ulster County","111","1110","Ulster",36550,18565,17860
+"G3601130","1830","New York","36","360","Warren County","113","1130","Warren",11796,6005,5791
+"G3601150","1830","New York","36","360","Washington County","115","1150","Washington",42635,21581,21054
+"G3601170","1830","New York","36","360","Wayne County","117","1170","Wayne",33643,17281,16362
+"G3601190","1830","New York","36","360","Westchester County","119","1190","Westchester",36456,18934,17522
+"G3601230","1830","New York","36","360","Yates County","123","1230","Yates",19009,9677,9332
+"G3700070","1830","North Carolina","37","370","Anson County","007","0070","Anson",14095,7126,6969
+"G3700090","1830","North Carolina","37","370","Ashe County","009","0090","Ashe",6987,3574,3413
+"G3700130","1830","North Carolina","37","370","Beaufort County","013","0130","Beaufort",10969,5706,5263
+"G3700150","1830","North Carolina","37","370","Bertie County","015","0150","Bertie",12262,6166,6096
+"G3700170","1830","North Carolina","37","370","Bladen County","017","0170","Bladen",7811,3901,3910
+"G3700190","1830","North Carolina","37","370","Brunswick County","019","0190","Brunswick",6516,3329,3187
+"G3700210","1830","North Carolina","37","370","Buncombe County","021","0210","Buncombe",16281,8274,8007
+"G3700230","1830","North Carolina","37","370","Burke County","023","0230","Burke",17888,9200,8688
+"G3700250","1830","North Carolina","37","370","Cabarrus County","025","0250","Cabarrus",8810,4521,4289
+"G3700290","1830","North Carolina","37","370","Camden County","029","0290","Camden",6733,3468,3265
+"G3700310","1830","North Carolina","37","370","Carteret County","031","0310","Carteret",6597,3249,3348
+"G3700330","1830","North Carolina","37","370","Caswell County","033","0330","Caswell",15185,7518,7667
+"G3700370","1830","North Carolina","37","370","Chatham County","037","0370","Chatham",15405,7660,7745
+"G3700410","1830","North Carolina","37","370","Chowan County","041","0410","Chowan",6697,3302,3395
+"G3700470","1830","North Carolina","37","370","Columbus County","047","0470","Columbus",4141,2052,2089
+"G3700490","1830","North Carolina","37","370","Craven County","049","0490","Craven",13734,6782,6952
+"G3700510","1830","North Carolina","37","370","Cumberland County","051","0510","Cumberland",14834,7323,7511
+"G3700530","1830","North Carolina","37","370","Currituck County","053","0530","Currituck",7655,3771,3884
+"G3700570","1830","North Carolina","37","370","Davidson County","057","0570","Davidson",13389,6736,6653
+"G3700610","1830","North Carolina","37","370","Duplin County","061","0610","Duplin",11291,5755,5536
+"G3700650","1830","North Carolina","37","370","Edgecombe County","065","0650","Edgecombe",14935,7530,7405
+"G3700690","1830","North Carolina","37","370","Franklin County","069","0690","Franklin",10665,5298,5367
+"G3700730","1830","North Carolina","37","370","Gates County","073","0730","Gates",7866,4010,3856
+"G3700770","1830","North Carolina","37","370","Granville County","077","0770","Granville",19355,9514,9841
+"G3700790","1830","North Carolina","37","370","Greene County","079","0790","Greene",6413,3246,3167
+"G3700810","1830","North Carolina","37","370","Guilford County","081","0810","Guilford",18737,9375,9362
+"G3700830","1830","North Carolina","37","370","Halifax County","083","0830","Halifax",17739,8854,8885
+"G3700870","1830","North Carolina","37","370","Haywood County","087","0870","Haywood",4578,2329,2249
+"G3700910","1830","North Carolina","37","370","Hertford County","091","0910","Hertford",8537,4298,4239
+"G3700950","1830","North Carolina","37","370","Hyde County","095","0950","Hyde",6184,3143,3041
+"G3700970","1830","North Carolina","37","370","Iredell County","097","0970","Iredell",14918,7481,7437
+"G3701010","1830","North Carolina","37","370","Johnston County","101","1010","Johnston",10938,5500,5438
+"G3701030","1830","North Carolina","37","370","Jones County","103","1030","Jones",5608,2749,2859
+"G3701070","1830","North Carolina","37","370","Lenoir County","107","1070","Lenoir",7723,3891,3832
+"G3701090","1830","North Carolina","37","370","Lincoln County","109","1090","Lincoln",22455,11456,10999
+"G3701130","1830","North Carolina","37","370","Macon County","113","1130","Macon",5333,2737,2596
+"G3701170","1830","North Carolina","37","370","Martin County","117","1170","Martin",8539,4302,4237
+"G3701190","1830","North Carolina","37","370","Mecklenburg County","119","1190","Mecklenburg",20073,10117,9956
+"G3701230","1830","North Carolina","37","370","Montgomery County","123","1230","Montgomery",10919,5603,5316
+"G3701250","1830","North Carolina","37","370","Moore County","125","1250","Moore",7745,3796,3949
+"G3701270","1830","North Carolina","37","370","Nash County","127","1270","Nash",8490,4219,4271
+"G3701290","1830","North Carolina","37","370","New Hanover County","129","1290","New Hanover",10959,5474,5485
+"G3701310","1830","North Carolina","37","370","Northampton County","131","1310","Northampton",13391,6792,6599
+"G3701330","1830","North Carolina","37","370","Onslow County","133","1330","Onslow",7814,3907,3907
+"G3701350","1830","North Carolina","37","370","Orange County","135","1350","Orange",23908,11911,11997
+"G3701390","1830","North Carolina","37","370","Pasquotank County","139","1390","Pasquotank",8641,4390,4251
+"G3701430","1830","North Carolina","37","370","Perquimans County","143","1430","Perquimans",7419,3704,3715
+"G3701450","1830","North Carolina","37","370","Person County","145","1450","Person",10027,4986,5041
+"G3701470","1830","North Carolina","37","370","Pitt County","147","1470","Pitt",12093,6052,6041
+"G3701510","1830","North Carolina","37","370","Randolph County","151","1510","Randolph",12406,6240,6166
+"G3701530","1830","North Carolina","37","370","Richmond County","153","1530","Richmond",9396,4644,4752
+"G3701550","1830","North Carolina","37","370","Robeson County","155","1550","Robeson",9433,4685,4748
+"G3701570","1830","North Carolina","37","370","Rockingham County","157","1570","Rockingham",12935,6483,6452
+"G3701590","1830","North Carolina","37","370","Rowan County","159","1590","Rowan",20786,10290,10496
+"G3701610","1830","North Carolina","37","370","Rutherford County","161","1610","Rutherford",17557,8895,8662
+"G3701630","1830","North Carolina","37","370","Sampson County","163","1630","Sampson",11634,5846,5788
+"G3701690","1830","North Carolina","37","370","Stokes County","169","1690","Stokes",16196,7850,8346
+"G3701710","1830","North Carolina","37","370","Surry County","171","1710","Surry",14504,7082,7422
+"G3701770","1830","North Carolina","37","370","Tyrrell County","177","1770","Tyrrell",4732,2363,2369
+"G3701830","1830","North Carolina","37","370","Wake County","183","1830","Wake",20398,10164,10234
+"G3701850","1830","North Carolina","37","370","Warren County","185","1850","Warren",11877,5999,5878
+"G3701870","1830","North Carolina","37","370","Washington County","187","1870","Washington",4552,2261,2291
+"G3701910","1830","North Carolina","37","370","Wayne County","191","1910","Wayne",10331,5082,5249
+"G3701930","1830","North Carolina","37","370","Wilkes County","193","1930","Wilkes",11968,5867,6101
+"G3900010","1830","Ohio","39","390","Adams County","001","0010","Adams",12281,6253,6028
+"G3900030","1830","Ohio","39","390","Allen County","003","0030","Allen",578,291,287
+"G3900070","1830","Ohio","39","390","Ashtabula County","007","0070","Ashtabula",14584,7608,6976
+"G3900090","1830","Ohio","39","390","Athens County","009","0090","Athens",9787,4955,4832
+"G3900130","1830","Ohio","39","390","Belmont County","013","0130","Belmont",28627,14575,14052
+"G3900150","1830","Ohio","39","390","Brown County","015","0150","Brown",17867,9025,8842
+"G3900170","1830","Ohio","39","390","Butler County","017","0170","Butler",27142,14027,13115
+"G3900210","1830","Ohio","39","390","Champaign County","021","0210","Champaign",12131,6259,5872
+"G3900230","1830","Ohio","39","390","Clark County","023","0230","Clark",13114,6760,6354
+"G3900250","1830","Ohio","39","390","Clermont County","025","0250","Clermont",20466,10379,10087
+"G3900270","1830","Ohio","39","390","Clinton County","027","0270","Clinton",11436,5802,5634
+"G3900290","1830","Ohio","39","390","Columbiana County","029","0290","Columbiana",35592,18155,17437
+"G3900310","1830","Ohio","39","390","Coshocton County","031","0310","Coshocton",11161,5728,5433
+"G3900330","1830","Ohio","39","390","Crawford County","033","0330","Crawford",4791,2481,2310
+"G3900350","1830","Ohio","39","390","Cuyahoga County","035","0350","Cuyahoga",10373,5463,4910
+"G3900370","1830","Ohio","39","390","Darke County","037","0370","Darke",6204,3214,2990
+"G3900410","1830","Ohio","39","390","Delaware County","041","0410","Delaware",11504,5942,5562
+"G3900450","1830","Ohio","39","390","Fairfield County","045","0450","Fairfield",24786,12777,12009
+"G3900470","1830","Ohio","39","390","Fayette County","047","0470","Fayette",8182,4115,4067
+"G3900490","1830","Ohio","39","390","Franklin County","049","0490","Franklin",14741,7906,6835
+"G3900530","1830","Ohio","39","390","Gallia County","053","0530","Gallia",9733,4948,4785
+"G3900550","1830","Ohio","39","390","Geauga County","055","0550","Geauga",15813,8376,7437
+"G3900570","1830","Ohio","39","390","Greene County","057","0570","Greene",14801,7617,7184
+"G3900590","1830","Ohio","39","390","Guernsey County","059","0590","Guernsey",18036,9135,8901
+"G3900610","1830","Ohio","39","390","Hamilton County","061","0610","Hamilton",52317,27237,25080
+"G3900630","1830","Ohio","39","390","Hancock County","063","0630","Hancock",813,454,359
+"G3900650","1830","Ohio","39","390","Hardin County","065","0650","Hardin",210,107,103
+"G3900670","1830","Ohio","39","390","Harrison County","067","0670","Harrison",20916,10659,10257
+"G3900690","1830","Ohio","39","390","Henry County","069","0690","Henry",262,142,120
+"G3900710","1830","Ohio","39","390","Highland County","071","0710","Highland",16345,8311,8034
+"G3900730","1830","Ohio","39","390","Hocking County","073","0730","Hocking",4008,2035,1973
+"G3900750","1830","Ohio","39","390","Holmes County","075","0750","Holmes",9135,4714,4421
+"G3900770","1830","Ohio","39","390","Huron County","077","0770","Huron",13341,7097,6244
+"G3900790","1830","Ohio","39","390","Jackson County","079","0790","Jackson",5941,3045,2896
+"G3900810","1830","Ohio","39","390","Jefferson County","081","0810","Jefferson",22489,11429,11060
+"G3900830","1830","Ohio","39","390","Knox County","083","0830","Knox",17085,8853,8232
+"G3900870","1830","Ohio","39","390","Lawrence County","087","0870","Lawrence",5367,2788,2579
+"G3900890","1830","Ohio","39","390","Licking County","089","0890","Licking",20869,10922,9947
+"G3900910","1830","Ohio","39","390","Logan County","091","0910","Logan",6440,3311,3129
+"G3900930","1830","Ohio","39","390","Lorain County","093","0930","Lorain",5696,2975,2721
+"G3900970","1830","Ohio","39","390","Madison County","097","0970","Madison",6190,3239,2951
+"G3901010","1830","Ohio","39","390","Marion County","101","1010","Marion",6551,3495,3056
+"G3901030","1830","Ohio","39","390","Medina County","103","1030","Medina",7560,3949,3611
+"G3901050","1830","Ohio","39","390","Meigs County","105","1050","Meigs",6158,3163,2995
+"G3901070","1830","Ohio","39","390","Mercer County","107","1070","Mercer",1110,592,518
+"G3901090","1830","Ohio","39","390","Miami County","109","1090","Miami",12807,6634,6173
+"G3901110","1830","Ohio","39","390","Monroe County","111","1110","Monroe",8768,4493,4275
+"G3901130","1830","Ohio","39","390","Montgomery County","113","1130","Montgomery",24362,12628,11734
+"G3901150","1830","Ohio","39","390","Morgan County","115","1150","Morgan",11800,6021,5779
+"G3901190","1830","Ohio","39","390","Muskingum County","119","1190","Muskingum",29334,15245,14089
+"G3901250","1830","Ohio","39","390","Paulding County","125","1250","Paulding",161,84,77
+"G3901270","1830","Ohio","39","390","Perry County","127","1270","Perry",13970,7219,6751
+"G3901290","1830","Ohio","39","390","Pickaway County","129","1290","Pickaway",16001,8343,7658
+"G3901310","1830","Ohio","39","390","Pike County","131","1310","Pike",6024,3394,2630
+"G3901330","1830","Ohio","39","390","Portage County","133","1330","Portage",18826,9804,9022
+"G3901350","1830","Ohio","39","390","Preble County","135","1350","Preble",16291,8380,7911
+"G3901370","1830","Ohio","39","390","Putnam County","137","1370","Putnam",230,134,96
+"G3901390","1830","Ohio","39","390","Richland County","139","1390","Richland",24006,12416,11590
+"G3901410","1830","Ohio","39","390","Ross County","141","1410","Ross",24068,12529,11539
+"G3901430","1830","Ohio","39","390","Sandusky County","143","1430","Sandusky",2851,1555,1296
+"G3901450","1830","Ohio","39","390","Scioto County","145","1450","Scioto",8740,4804,3936
+"G3901470","1830","Ohio","39","390","Seneca County","147","1470","Seneca",5159,2742,2417
+"G3901490","1830","Ohio","39","390","Shelby County","149","1490","Shelby",3671,1867,1804
+"G3901510","1830","Ohio","39","390","Stark County","151","1510","Stark",26588,13751,12837
+"G3901550","1830","Ohio","39","390","Trumbull County","155","1550","Trumbull",26153,13419,12734
+"G3901570","1830","Ohio","39","390","Tuscarawas County","157","1570","Tuscarawas",14298,7311,6987
+"G3901590","1830","Ohio","39","390","Union County","159","1590","Union",3192,1647,1545
+"G3901610","1830","Ohio","39","390","Van Wert County","161","1610","Van Wert",49,29,20
+"G3901650","1830","Ohio","39","390","Warren County","165","1650","Warren",21468,10903,10565
+"G3901670","1830","Ohio","39","390","Washington County","167","1670","Washington",11731,5966,5765
+"G3901690","1830","Ohio","39","390","Wayne County","169","1690","Wayne",23333,12042,11291
+"G3901710","1830","Ohio","39","390","Williams County","171","1710","Williams",387,213,174
+"G3901730","1830","Ohio","39","390","Wood County","173","1730","Wood",1102,622,480
+"G4200010","1830","Pennsylvania","42","420","Adams County","001","0010","Adams",21379,10709,10670
+"G4200030","1830","Pennsylvania","42","420","Allegheny County","003","0030","Allegheny",50552,25881,24671
+"G4200050","1830","Pennsylvania","42","420","Armstrong County","005","0050","Armstrong",17701,9019,8682
+"G4200070","1830","Pennsylvania","42","420","Beaver County","007","0070","Beaver",24183,12299,11884
+"G4200090","1830","Pennsylvania","42","420","Bedford County","009","0090","Bedford",24502,12396,12106
+"G4200110","1830","Pennsylvania","42","420","Berks County","011","0110","Berks",53152,26943,26209
+"G4200150","1830","Pennsylvania","42","420","Bradford County","015","0150","Bradford",19746,10181,9565
+"G4200170","1830","Pennsylvania","42","420","Bucks County","017","0170","Bucks",45745,23444,22301
+"G4200190","1830","Pennsylvania","42","420","Butler County","019","0190","Butler",14581,7515,7066
+"G4200210","1830","Pennsylvania","42","420","Cambria County","021","0210","Cambria",7076,3837,3239
+"G4200270","1830","Pennsylvania","42","420","Centre County","027","0270","Centre",18879,9737,9142
+"G4200290","1830","Pennsylvania","42","420","Chester County","029","0290","Chester",50910,25767,25143
+"G4200330","1830","Pennsylvania","42","420","Clearfield County","033","0330","Clearfield",4803,2513,2290
+"G4200370","1830","Pennsylvania","42","420","Columbia County","037","0370","Columbia",20059,10323,9736
+"G4200390","1830","Pennsylvania","42","420","Crawford County","039","0390","Crawford",16030,8358,7672
+"G4200410","1830","Pennsylvania","42","420","Cumberland County","041","0410","Cumberland",29226,14733,14493
+"G4200430","1830","Pennsylvania","42","420","Dauphin County","043","0430","Dauphin",25243,12707,12536
+"G4200450","1830","Pennsylvania","42","420","Delaware County","045","0450","Delaware",17323,8813,8510
+"G4200490","1830","Pennsylvania","42","420","Erie County","049","0490","Erie",17041,8834,8207
+"G4200510","1830","Pennsylvania","42","420","Fayette County","051","0510","Fayette",29172,14648,14524
+"G4200550","1830","Pennsylvania","42","420","Franklin County","055","0550","Franklin",35037,17797,17240
+"G4200590","1830","Pennsylvania","42","420","Greene County","059","0590","Greene",18028,9041,8987
+"G4200610","1830","Pennsylvania","42","420","Huntingdon County","061","0610","Huntingdon",27145,14539,12606
+"G4200630","1830","Pennsylvania","42","420","Indiana County","063","0630","Indiana",14252,7247,7005
+"G4200650","1830","Pennsylvania","42","420","Jefferson County","065","0650","Jefferson",2025,1072,953
+"G4200710","1830","Pennsylvania","42","420","Lancaster County","071","0710","Lancaster",76631,38873,37758
+"G4200750","1830","Pennsylvania","42","420","Lebanon County","075","0750","Lebanon",20557,10425,10132
+"G4200770","1830","Pennsylvania","42","420","Lehigh County","077","0770","Lehigh",22256,11235,11021
+"G4200790","1830","Pennsylvania","42","420","Luzerne County","079","0790","Luzerne",27379,14350,13029
+"G4200810","1830","Pennsylvania","42","420","Lycoming County","081","0810","Lycoming",17636,9057,8579
+"G4200830","1830","Pennsylvania","42","420","McKean County","083","0830","Mckean",1439,765,674
+"G4200850","1830","Pennsylvania","42","420","Mercer County","085","0850","Mercer",19729,9997,9732
+"G4200870","1830","Pennsylvania","42","420","Mifflin County","087","0870","Mifflin",21690,11957,9733
+"G4200910","1830","Pennsylvania","42","420","Montgomery County","091","0910","Montgomery",39406,20090,19316
+"G4200950","1830","Pennsylvania","42","420","Northampton County","095","0950","Northampton",39482,20642,18840
+"G4200970","1830","Pennsylvania","42","420","Northumberland County","097","0970","Northumberland",18133,9279,8854
+"G4200990","1830","Pennsylvania","42","420","Perry County","099","0990","Perry",14261,7238,7023
+"G4201010","1830","Pennsylvania","42","420","Philadelphia County","101","1010","Philadelphia",188797,90217,98580
+"G4201030","1830","Pennsylvania","42","420","Pike County","103","1030","Pike",4843,2504,2339
+"G4201050","1830","Pennsylvania","42","420","Potter County","105","1050","Potter",1265,665,600
+"G4201070","1830","Pennsylvania","42","420","Schuylkill County","107","1070","Schuylkill",20744,11753,8991
+"G4201110","1830","Pennsylvania","42","420","Somerset County","111","1110","Somerset",17762,9136,8626
+"G4201150","1830","Pennsylvania","42","420","Susquehanna County","115","1150","Susquehanna",16787,8453,8334
+"G4201170","1830","Pennsylvania","42","420","Tioga County","117","1170","Tioga",8978,4724,4254
+"G4201190","1830","Pennsylvania","42","420","Union County","119","1190","Union",20795,10506,10289
+"G4201210","1830","Pennsylvania","42","420","Venango County","121","1210","Venango",9470,4999,4471
+"G4201230","1830","Pennsylvania","42","420","Warren County","123","1230","Warren",4697,2509,2188
+"G4201250","1830","Pennsylvania","42","420","Washington County","125","1250","Washington",42784,21627,21157
+"G4201270","1830","Pennsylvania","42","420","Wayne County","127","1270","Wayne",7663,4098,3565
+"G4201290","1830","Pennsylvania","42","420","Westmoreland County","129","1290","Westmoreland",38400,19576,18824
+"G4201330","1830","Pennsylvania","42","420","York County","133","1330","York",42859,21333,21526
+"G4400010","1830","Rhode Island","44","440","Bristol County","001","0010","Bristol",5446,2633,2813
+"G4400030","1830","Rhode Island","44","440","Kent County","003","0030","Kent",12789,6053,6736
+"G4400050","1830","Rhode Island","44","440","Newport County","005","0050","Newport",16535,8034,8501
+"G4400070","1830","Rhode Island","44","440","Providence County","007","0070","Providence",47018,22613,24405
+"G4400090","1830","Rhode Island","44","440","Washington County","009","0090","Washington",15411,7551,7860
+"G4500010","1830","South Carolina","45","450","Abbeville County","001","0010","Abbeville",28149,14298,13851
+"G4500070","1830","South Carolina","45","450","Anderson County","007","0070","Anderson",17169,8645,8524
+"G4500110","1830","South Carolina","45","450","Barnwell County","011","0110","Barnwell",19236,9730,9506
+"G4500130","1830","South Carolina","45","450","Beaufort County","013","0130","Beaufort",37032,18552,18480
+"G4500190","1830","South Carolina","45","450","Charleston County","019","0190","Charleston",86338,42268,44070
+"G4500230","1830","South Carolina","45","450","Chester County","023","0230","Chester",17182,8557,8625
+"G4500250","1830","South Carolina","45","450","Chesterfield County","025","0250","Chesterfield",8472,4205,4267
+"G4500290","1830","South Carolina","45","450","Colleton County","029","0290","Colleton",27256,13579,13677
+"G4500310","1830","South Carolina","45","450","Darlington County","031","0310","Darlington",13728,6881,6847
+"G4500370","1830","South Carolina","45","450","Edgefield County","037","0370","Edgefield",30509,15472,15037
+"G4500390","1830","South Carolina","45","450","Fairfield County","039","0390","Fairfield",21546,10593,10953
+"G4500430","1830","South Carolina","45","450","Georgetown County","043","0430","Georgetown",19943,9470,10473
+"G4500450","1830","South Carolina","45","450","Greenville County","045","0450","Greenville",16476,8109,8367
+"G4500510","1830","South Carolina","45","450","Horry County","051","0510","Horry",5245,2654,2591
+"G4500550","1830","South Carolina","45","450","Kershaw County","055","0550","Kershaw",13545,6766,6779
+"G4500570","1830","South Carolina","45","450","Lancaster County","057","0570","Lancaster",10361,5204,5157
+"G4500590","1830","South Carolina","45","450","Laurens County","059","0590","Laurens",20863,10438,10425
+"G4500630","1830","South Carolina","45","450","Lexington County","063","0630","Lexington",9065,4516,4549
+"G4500670","1830","South Carolina","45","450","Marion County","067","0670","Marion",11208,5599,5609
+"G4500690","1830","South Carolina","45","450","Marlboro County","069","0690","Marlboro",8582,4307,4275
+"G4500710","1830","South Carolina","45","450","Newberry County","071","0710","Newberry",17441,8718,8723
+"G4500750","1830","South Carolina","45","450","Orangeburg County","075","0750","Orangeburg",18453,9355,9098
+"G4500770","1830","South Carolina","45","450","Pickens County","077","0770","Pickens",14473,7200,7273
+"G4500790","1830","South Carolina","45","450","Richland County","079","0790","Richland",14772,7462,7310
+"G4500830","1830","South Carolina","45","450","Spartanburg County","083","0830","Spartanburg",21150,10573,10577
+"G4500850","1830","South Carolina","45","450","Sumter County","085","0850","Sumter",28277,14077,14200
+"G4500870","1830","South Carolina","45","450","Union County","087","0870","Union",17906,9017,8889
+"G4500890","1830","South Carolina","45","450","Williamsburg County","089","0890","Williamsburg",9018,4560,4458
+"G4500910","1830","South Carolina","45","450","York County","091","0910","York",17790,8926,8864
+"G4700010","1830","Tennessee","47","470","Anderson County","001","0010","Anderson",5310,2706,2604
+"G4700030","1830","Tennessee","47","470","Bedford County","003","0030","Bedford",30396,15587,14809
+"G4700070","1830","Tennessee","47","470","Bledsoe County","007","0070","Bledsoe",4648,2356,2292
+"G4700090","1830","Tennessee","47","470","Blount County","009","0090","Blount",11028,5533,5495
+"G4700130","1830","Tennessee","47","470","Campbell County","013","0130","Campbell",5110,2587,2523
+"G4700170","1830","Tennessee","47","470","Carroll County","017","0170","Carroll",9397,4847,4550
+"G4700190","1830","Tennessee","47","470","Carter County","019","0190","Carter",6414,3296,3118
+"G4700250","1830","Tennessee","47","470","Claiborne County","025","0250","Claiborne",8470,4297,4173
+"G4700290","1830","Tennessee","47","470","Cocke County","029","0290","Cocke",6017,2988,3029
+"G4700370","1830","Tennessee","47","470","Davidson County","037","0370","Davidson",28122,14600,13522
+"G4700430","1830","Tennessee","47","470","Dickson County","043","0430","Dickson",7265,3808,3457
+"G4700450","1830","Tennessee","47","470","Dyer County","045","0450","Dyer",1904,984,920
+"G4700470","1830","Tennessee","47","470","Fayette County","047","0470","Fayette",8652,4566,4086
+"G4700490","1830","Tennessee","47","470","Fentress County","049","0490","Fentress",2748,1393,1355
+"G4700510","1830","Tennessee","47","470","Franklin County","051","0510","Franklin",15620,7864,7756
+"G4700530","1830","Tennessee","47","470","Gibson County","053","0530","Gibson",5801,3015,2786
+"G4700550","1830","Tennessee","47","470","Giles County","055","0550","Giles",18703,9585,9118
+"G4700570","1830","Tennessee","47","470","Grainger County","057","0570","Grainger",10066,4974,5092
+"G4700590","1830","Tennessee","47","470","Greene County","059","0590","Greene",14410,7263,7147
+"G4700650","1830","Tennessee","47","470","Hamilton County","065","0650","Hamilton",2276,1157,1119
+"G4700690","1830","Tennessee","47","470","Hardeman County","069","0690","Hardeman",11655,6052,5603
+"G4700710","1830","Tennessee","47","470","Hardin County","071","0710","Hardin",4868,2495,2373
+"G4700730","1830","Tennessee","47","470","Hawkins County","073","0730","Hawkins",13683,6880,6803
+"G4700750","1830","Tennessee","47","470","Haywood County","075","0750","Haywood",5334,2876,2458
+"G4700770","1830","Tennessee","47","470","Henderson County","077","0770","Henderson",8748,4602,4146
+"G4700790","1830","Tennessee","47","470","Henry County","079","0790","Henry",12249,6363,5886
+"G4700810","1830","Tennessee","47","470","Hickman County","081","0810","Hickman",8119,4097,4022
+"G4700850","1830","Tennessee","47","470","Humphreys County","085","0850","Humphreys",6187,3109,3078
+"G4700870","1830","Tennessee","47","470","Jackson County","087","0870","Jackson",9698,4872,4826
+"G4700890","1830","Tennessee","47","470","Jefferson County","089","0890","Jefferson",11801,5927,5874
+"G4700930","1830","Tennessee","47","470","Knox County","093","0930","Knox",14498,7208,7290
+"G4700990","1830","Tennessee","47","470","Lawrence County","099","0990","Lawrence",5411,2769,2642
+"G4701030","1830","Tennessee","47","470","Lincoln County","103","1030","Lincoln",22075,11216,10859
+"G4701070","1830","Tennessee","47","470","McMinn County","107","1070","Mcminn",14460,7356,7104
+"G4701090","1830","Tennessee","47","470","McNairy County","109","1090","Mcnairy",5697,2931,2766
+"G4701130","1830","Tennessee","47","470","Madison County","113","1130","Madison",11594,6016,5578
+"G4701150","1830","Tennessee","47","470","Marion County","115","1150","Marion",5508,2879,2629
+"G4701190","1830","Tennessee","47","470","Maury County","119","1190","Maury",27665,14031,13634
+"G4701230","1830","Tennessee","47","470","Monroe County","123","1230","Monroe",13708,6909,6799
+"G4701250","1830","Tennessee","47","470","Montgomery County","125","1250","Montgomery",14349,7379,6970
+"G4701290","1830","Tennessee","47","470","Morgan County","129","1290","Morgan",2582,1323,1259
+"G4701310","1830","Tennessee","47","470","Obion County","131","1310","Obion",2099,1087,1012
+"G4701330","1830","Tennessee","47","470","Overton County","133","1330","Overton",8242,4128,4114
+"G4701350","1830","Tennessee","47","470","Perry County","135","1350","Perry",7094,3863,3231
+"G4701430","1830","Tennessee","47","470","Rhea County","143","1430","Rhea",8186,4141,4045
+"G4701450","1830","Tennessee","47","470","Roane County","145","1450","Roane",11341,5645,5696
+"G4701470","1830","Tennessee","47","470","Robertson County","147","1470","Robertson",13272,6713,6559
+"G4701490","1830","Tennessee","47","470","Rutherford County","149","1490","Rutherford",26134,13158,12976
+"G4701550","1830","Tennessee","47","470","Sevier County","155","1550","Sevier",5717,2854,2863
+"G4701570","1830","Tennessee","47","470","Shelby County","157","1570","Shelby",5648,3030,2618
+"G4701590","1830","Tennessee","47","470","Smith County","159","1590","Smith",19906,9989,9917
+"G4701610","1830","Tennessee","47","470","Stewart County","161","1610","Stewart",6968,3648,3320
+"G4701630","1830","Tennessee","47","470","Sullivan County","163","1630","Sullivan",10073,5175,4898
+"G4701650","1830","Tennessee","47","470","Sumner County","165","1650","Sumner",20569,10378,10191
+"G4701670","1830","Tennessee","47","470","Tipton County","167","1670","Tipton",5317,2891,2426
+"G4701770","1830","Tennessee","47","470","Warren County","177","1770","Warren",15210,7725,7485
+"G4701790","1830","Tennessee","47","470","Washington County","179","1790","Washington",10995,5491,5504
+"G4701810","1830","Tennessee","47","470","Wayne County","181","1810","Wayne",6013,3064,2949
+"G4701830","1830","Tennessee","47","470","Weakley County","183","1830","Weakley",4797,2456,2341
+"G4701850","1830","Tennessee","47","470","White County","185","1850","White",9967,5059,4908
+"G4701870","1830","Tennessee","47","470","Williamson County","187","1870","Williamson",26638,13516,13122
+"G4701890","1830","Tennessee","47","470","Wilson County","189","1890","Wilson",25472,12905,12567
+"G5000010","1830","Vermont","50","500","Addison County","001","0010","Addison",24940,12579,12361
+"G5000030","1830","Vermont","50","500","Bennington County","003","0030","Bennington",17468,8805,8663
+"G5000050","1830","Vermont","50","500","Caledonia County","005","0050","Caledonia",20967,10441,10526
+"G5000070","1830","Vermont","50","500","Chittenden County","007","0070","Chittenden",21765,11095,10670
+"G5000090","1830","Vermont","50","500","Essex County","009","0090","Essex",3981,1956,2025
+"G5000110","1830","Vermont","50","500","Franklin County","011","0110","Franklin",24525,12383,12142
+"G5000130","1830","Vermont","50","500","Grand Isle County","013","0130","Grand Isle",3696,1952,1744
+"G5000170","1830","Vermont","50","500","Orange County","017","0170","Orange",27285,13440,13845
+"G5000190","1830","Vermont","50","500","Orleans County","019","0190","Orleans",13980,7096,6884
+"G5000210","1830","Vermont","50","500","Rutland County","021","0210","Rutland",31294,15820,15474
+"G5000230","1830","Vermont","50","500","Washington County","023","0230","Washington",21378,10505,10873
+"G5000250","1830","Vermont","50","500","Windham County","025","0250","Windham",28748,14207,14541
+"G5000270","1830","Vermont","50","500","Windsor County","027","0270","Windsor",40625,20143,20482
+"G5100010","1830","Virginia","51","510","Accomack County","001","0010","Accomack",16656,8039,8617
+"G5100030","1830","Virginia","51","510","Albemarle County","003","0030","Albemarle",22618,11610,11008
+"G5100050","1830","Virginia","51","510","Alleghany County","005","0050","Alleghany",2816,1496,1320
+"G5100070","1830","Virginia","51","510","Amelia County","007","0070","Amelia",11036,5464,5572
+"G5100090","1830","Virginia","51","510","Amherst County","009","0090","Amherst",12071,6016,6055
+"G5100150","1830","Virginia","51","510","Augusta County","015","0150","Augusta",19926,10108,9818
+"G5100170","1830","Virginia","51","510","Bath County","017","0170","Bath",4002,2006,1996
+"G5100190","1830","Virginia","51","510","Bedford County","019","0190","Bedford",20246,10186,10060
+"G5100195","1830","Virginia","51","510","Berkeley County",,"0195","Berkeley",10518,5364,5154
+"G5100230","1830","Virginia","51","510","Botetourt County","023","0230","Botetourt",16354,8371,7983
+"G5100237","1830","Virginia","51","510","Brooke County",,"0237","Brooke",7041,3640,3401
+"G5100250","1830","Virginia","51","510","Brunswick County","025","0250","Brunswick",15767,7806,7961
+"G5100290","1830","Virginia","51","510","Buckingham County","029","0290","Buckingham",18351,9371,8980
+"G5100293","1830","Virginia","51","510","Cabell County",,"0293","Cabell",5884,3036,2848
+"G5100310","1830","Virginia","51","510","Campbell County","031","0310","Campbell",20350,10140,10210
+"G5100330","1830","Virginia","51","510","Caroline County","033","0330","Caroline",17760,8709,9051
+"G5100360","1830","Virginia","51","510","Charles City County","036","0360","Charles City",5500,2774,2726
+"G5100370","1830","Virginia","51","510","Charlotte County","037","0370","Charlotte",15252,7697,7555
+"G5100410","1830","Virginia","51","510","Chesterfield County","041","0410","Chesterfield",18637,9812,8825
+"G5100470","1830","Virginia","51","510","Culpeper County","047","0470","Culpeper",24027,12105,11922
+"G5100490","1830","Virginia","51","510","Cumberland County","049","0490","Cumberland",11690,6033,5657
+"G5100530","1830","Virginia","51","510","Dinwiddie County","053","0530","Dinwiddie",13579,6713,6866
+"G5100550","1830","Virginia","51","510","Elizabeth City","055","0550","Elizabeth City",5053,2821,2232
+"G5100570","1830","Virginia","51","510","Essex County","057","0570","Essex",10521,5148,5373
+"G5100590","1830","Virginia","51","510","Fairfax County","059","0590","Fairfax",9204,4649,4555
+"G5100610","1830","Virginia","51","510","Fauquier County","061","0610","Fauquier",26086,13064,13022
+"G5100650","1830","Virginia","51","510","Fluvanna County","065","0650","Fluvanna",8221,4121,4100
+"G5100670","1830","Virginia","51","510","Franklin County","067","0670","Franklin",14911,7459,7452
+"G5100690","1830","Virginia","51","510","Frederick County","069","0690","Frederick",26046,13080,12966
+"G5100710","1830","Virginia","51","510","Giles County","071","0710","Giles",5274,2671,2603
+"G5100730","1830","Virginia","51","510","Gloucester County","073","0730","Gloucester",10608,5277,5331
+"G5100750","1830","Virginia","51","510","Goochland County","075","0750","Goochland",10369,5202,5167
+"G5100770","1830","Virginia","51","510","Grayson County","077","0770","Grayson",7675,3881,3794
+"G5100775","1830","Virginia","51","510","Greenbrier County",,"0775","Greenbrier",9006,4629,4377
+"G5100810","1830","Virginia","51","510","Greensville County","081","0810","Greensville",7117,3578,3539
+"G5100830","1830","Virginia","51","510","Halifax County","083","0830","Halifax",28034,13980,14054
+"G5100833","1830","Virginia","51","510","Hampshire County",,"0833","Hampshire",11279,5754,5525
+"G5100850","1830","Virginia","51","510","Hanover County","085","0850","Hanover",16253,7919,8334
+"G5100853","1830","Virginia","51","510","Hardy County",,"0853","Hardy",6798,3560,3238
+"G5100857","1830","Virginia","51","510","Harrison County",,"0857","Harrison",14722,7505,7217
+"G5100870","1830","Virginia","51","510","Henrico County","087","0870","Henrico",12737,6686,6051
+"G5100890","1830","Virginia","51","510","Henry County","089","0890","Henry",7100,3542,3558
+"G5100930","1830","Virginia","51","510","Isle of Wight County","093","0930","Isle Of Wight",10517,5220,5297
+"G5100950","1830","Virginia","51","510","James City County","095","0950","James City",3838,1921,1917
+"G5100953","1830","Virginia","51","510","Jefferson County",,"0953","Jefferson",12927,6648,6279
+"G5100957","1830","Virginia","51","510","Kanawha County",,"0957","Kanawha",9326,5195,4131
+"G5100970","1830","Virginia","51","510","King and Queen County","097","0970","King And Queen",11644,5674,5970
+"G5100990","1830","Virginia","51","510","King George County","099","0990","King George",6397,3182,3215
+"G5101010","1830","Virginia","51","510","King William County","101","1010","King William",9812,4744,5068
+"G5101030","1830","Virginia","51","510","Lancaster County","103","1030","Lancaster",4801,2284,2517
+"G5101050","1830","Virginia","51","510","Lee County","105","1050","Lee",6461,3259,3202
+"G5101053","1830","Virginia","51","510","Lewis County",,"1053","Lewis",6241,3165,3076
+"G5101057","1830","Virginia","51","510","Logan County",,"1057","Logan",3680,1898,1782
+"G5101070","1830","Virginia","51","510","Loudoun County","107","1070","Loudoun",21939,10972,10967
+"G5101090","1830","Virginia","51","510","Louisa County","109","1090","Louisa",16151,7952,8199
+"G5101110","1830","Virginia","51","510","Lunenburg County","111","1110","Lunenburg",11957,6009,5948
+"G5101130","1830","Virginia","51","510","Madison County","113","1130","Madison",9236,4625,4611
+"G5101137","1830","Virginia","51","510","Mason County",,"1137","Mason",6534,3308,3226
+"G5101150","1830","Virginia","51","510","Mathews County","115","1150","Matthews",7664,3607,4057
+"G5101170","1830","Virginia","51","510","Mecklenburg County","117","1170","Mecklenburg",20477,10475,10002
+"G5101190","1830","Virginia","51","510","Middlesex County","119","1190","Middlesex",4122,2041,2081
+"G5101193","1830","Virginia","51","510","Monongalia County",,"1193","Monongalia",14056,7075,6981
+"G5101197","1830","Virginia","51","510","Monroe County",,"1197","Monroe",7798,3965,3833
+"G5101210","1830","Virginia","51","510","Montgomery County","121","1210","Montgomery",12306,6229,6077
+"G5101215","1830","Virginia","51","510","Morgan County",,"1215","Morgan",2694,1390,1304
+"G5101230","1830","Virginia","51","510","Nansemond County","123","1230","Nansemond",11784,5860,5924
+"G5101250","1830","Virginia","51","510","Nelson County","125","1250","Nelson",11254,5618,5636
+"G5101270","1830","Virginia","51","510","New Kent County","127","1270","New Kent",6458,3147,3311
+"G5101275","1830","Virginia","51","510","Nicholas County",,"1275","Nicholas",3346,1751,1595
+"G5101290","1830","Virginia","51","510","Norfolk County","129","1290","Norfolk",14992,7496,7496
+"G5101310","1830","Virginia","51","510","Northampton County","131","1310","Northampton",8641,4283,4358
+"G5101330","1830","Virginia","51","510","Northumberland County","133","1330","Northumberland",7953,4004,3949
+"G5101350","1830","Virginia","51","510","Nottoway County","135","1350","Nottoway",10130,5019,5111
+"G5101355","1830","Virginia","51","510","Ohio County",,"1355","Ohio",15584,7929,7655
+"G5101370","1830","Virginia","51","510","Orange County","137","1370","Orange",14637,7341,7296
+"G5101410","1830","Virginia","51","510","Patrick County","141","1410","Patrick",7395,3606,3789
+"G5101415","1830","Virginia","51","510","Pendleton County",,"1415","Pendleton",6271,3219,3052
+"G5101430","1830","Virginia","51","510","Pittsylvania County","143","1430","Pittsylvania",26034,13027,13007
+"G5101437","1830","Virginia","51","510","Pocahontas County",,"1437","Pocahontas",2542,1287,1255
+"G5101450","1830","Virginia","51","510","Powhatan County","145","1450","Powhatan",8517,4391,4126
+"G5101455","1830","Virginia","51","510","Preston County",,"1455","Preston",5144,2627,2517
+"G5101470","1830","Virginia","51","510","Prince Edward County","147","1470","Prince Edward",14107,7300,6807
+"G5101490","1830","Virginia","51","510","Prince George County","149","1490","Prince George",8367,4258,4109
+"G5101510","1830","Virginia","51","510","Princess Anne County","151","1510","Princess Anne",9102,4617,4485
+"G5101530","1830","Virginia","51","510","Prince William County","153","1530","Prince William",9330,4647,4683
+"G5101557","1830","Virginia","51","510","Randolph County",,"1557","Randolph",5000,2600,2400
+"G5101590","1830","Virginia","51","510","Richmond County","159","1590","Richmond",6055,2932,3123
+"G5101630","1830","Virginia","51","510","Rockbridge County","163","1630","Rockbridge",14244,7397,6847
+"G5101650","1830","Virginia","51","510","Rockingham County","165","1650","Rockingham",20683,10426,10257
+"G5101670","1830","Virginia","51","510","Russell County","167","1670","Russell",6714,3378,3336
+"G5101690","1830","Virginia","51","510","Scott County","169","1690","Scott",5724,2925,2799
+"G5101710","1830","Virginia","51","510","Shenandoah County","171","1710","Shenandoah",19750,9922,9828
+"G5101750","1830","Virginia","51","510","Southampton County","175","1750","Southampton",16074,8208,7866
+"G5101770","1830","Virginia","51","510","Spotsylvania County","177","1770","Spotsylvania",15134,7406,7728
+"G5101790","1830","Virginia","51","510","Stafford County","179","1790","Stafford",9362,4687,4675
+"G5101810","1830","Virginia","51","510","Surry County","181","1810","Surry",7109,3508,3601
+"G5101830","1830","Virginia","51","510","Sussex County","183","1830","Sussex",12720,6510,6210
+"G5101850","1830","Virginia","51","510","Tazewell County","185","1850","Tazewell",5749,2858,2891
+"G5101855","1830","Virginia","51","510","Tyler County",,"1855","Tyler",4104,2084,2020
+"G5101890","1830","Virginia","51","510","Warwick County","189","1890","Warwick",1570,791,779
+"G5101910","1830","Virginia","51","510","Washington County","191","1910","Washington",15614,7762,7852
+"G5101930","1830","Virginia","51","510","Westmoreland County","193","1930","Westmoreland",8396,4139,4257
+"G5101953","1830","Virginia","51","510","Wood County",,"1953","Wood",6429,3313,3116
+"G5101970","1830","Virginia","51","510","Wythe County","197","1970","Wythe",12163,6147,6016
+"G5101990","1830","Virginia","51","510","York County","199","1990","York",5354,2617,2737
+"G5107100","1830","Virginia","51","510","Norfolk city","710","7100","Norfolk City",9814,4418,5396
+"G5107300","1830","Virginia","51","510","Petersburg city","730","7300","Petersburg City",8322,3931,4391
+"G5107600","1830","Virginia","51","510","Richmond city","760","7600","Richmond City",16060,8105,7955

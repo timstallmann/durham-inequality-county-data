@@ -1,0 +1,192 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0008_ts_nominal_1840_county'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Geographic Integration Methods
+    - Source Data
+    - Citation and Use
+ 
+Detailed notes on time series design and comparability are available at: 
+    https://assets.nhgis.org/NHGIS_Time_Series_Tables.pdf 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout:     Time varies by file
+Geographic level:       County (by State)
+Geographic integration: Nominal
+Year:                   1840
+ 
+Tables:
+ 
+1. Total Population
+   Code: A00
+   Subdivided into 23 files:
+       nhgis0008_ts_1790_county.csv
+       nhgis0008_ts_1800_county.csv
+       nhgis0008_ts_1810_county.csv
+       nhgis0008_ts_1820_county.csv
+       nhgis0008_ts_1830_county.csv
+       nhgis0008_ts_1840_county.csv
+       nhgis0008_ts_1850_county.csv
+       nhgis0008_ts_1860_county.csv
+       nhgis0008_ts_1870_county.csv
+       nhgis0008_ts_1880_county.csv
+       nhgis0008_ts_1890_county.csv
+       nhgis0008_ts_1900_county.csv
+       nhgis0008_ts_1910_county.csv
+       nhgis0008_ts_1920_county.csv
+       nhgis0008_ts_1930_county.csv
+       nhgis0008_ts_1940_county.csv
+       nhgis0008_ts_1950_county.csv
+       nhgis0008_ts_1960_county.csv
+       nhgis0008_ts_1970_county.csv
+       nhgis0008_ts_1980_county.csv
+       nhgis0008_ts_1990_county.csv
+       nhgis0008_ts_2000_county.csv
+       nhgis0008_ts_2010_county.csv
+ 
+2. Persons by Sex [2]
+   Code: A08
+   Subdivided into 20 files:
+       nhgis0008_ts_1820_county.csv
+       nhgis0008_ts_1830_county.csv
+       nhgis0008_ts_1840_county.csv
+       nhgis0008_ts_1850_county.csv
+       nhgis0008_ts_1860_county.csv
+       nhgis0008_ts_1870_county.csv
+       nhgis0008_ts_1880_county.csv
+       nhgis0008_ts_1890_county.csv
+       nhgis0008_ts_1900_county.csv
+       nhgis0008_ts_1910_county.csv
+       nhgis0008_ts_1920_county.csv
+       nhgis0008_ts_1930_county.csv
+       nhgis0008_ts_1940_county.csv
+       nhgis0008_ts_1950_county.csv
+       nhgis0008_ts_1960_county.csv
+       nhgis0008_ts_1970_county.csv
+       nhgis0008_ts_1980_county.csv
+       nhgis0008_ts_1990_county.csv
+       nhgis0008_ts_2000_county.csv
+       nhgis0008_ts_2010_county.csv
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STATE:       NHGIS Integrated State Name
+        STATEFP:     FIPS State Code
+        STATENH:     NHGIS Integrated State Code
+        COUNTY:      NHGIS Integrated County Name
+        COUNTYFP:    FIPS County Code
+        COUNTYNH:    NHGIS Integrated County Code
+        NAME:        Area Name, 1840
+ 
+Table 1: (A00) Total Population
+        A00AA1840:   Persons: Total
+ 
+Table 2: (A08) Persons by Sex [2]
+        A08AA1840:   Persons: Male
+        A08AB1840:   Persons: Female
+ 
+--------------------------------------------------------------------------------
+Geographic Integration Methods
+--------------------------------------------------------------------------------
+ 
+Nominal Integration:
+
+    Nominally integrated tables link geographic units across time according to
+    their names and codes, disregarding any changes in unit boundaries. The
+    identified geographic units match those from each census source, so the
+    spatial definitions and total number of units may vary from one time to
+    another (e.g., a city may annex land, a tract may be split in two, a new
+    county may be created, etc.). The tables include data for a particular
+    geographic unit only at times when the unit's name or code was in use,
+    resulting in truncated time series for some areas.
+    
+    Users should be cautious when interpreting changes in nominally integrated
+    time series because a single unit code may refer to distinctly different
+    areas at different times. If you are uncertain whether any boundaries
+    changed in your areas of interest, we recommend inspecting NHGIS boundary
+    files to confirm. (At this time, boundary files are available for all units
+    and years in nominally integrated time series *except* 1970 places and
+    county subdivisions.)
+    
+    Alternatively, for some topics and time periods, NHGIS provides
+    "geographically standardized" time series, which provide data from multiple
+    times for a single census's geographic units (e.g., 2000 and 2010 data for
+    2010 census units). A disadvantage of standardized time series is that, in
+    areas where source units do not nest perfectly within a unit of the standard
+    year (e.g., where a source 2000 unit intersects multiple 2010 units), NHGIS
+    applies interpolation to standardize the data, a process which may
+    occasionally produce substantial errors.
+
+Complete documentation on time series integration methods is available at:
+    https://www.nhgis.org/documentation/time-series
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Additional documentation on NHGIS data sources is available at:
+    https://www.nhgis.org/documentation/tabular-data
+
+Table 1: (A00) Total Population
+ 
+    Time series AA: Persons: Total
+        Source dataset: 1840 Census: Population & Other Data [US, States & Counties]
+            Source table: NT1. Total Population
+                Universe: Persons
+                    Variable: [ACD001] Total
+ 
+ 
+Table 2: (A08) Persons by Sex [2]
+ 
+    Time series AA: Persons: Male
+        Source dataset: 1840 Census: Population & Other Data [US, States & Counties]
+            Source table: NT29. Sex
+                Universe: Persons
+                    Variable: [ACV001] Male
+ 
+    Time series AB: Persons: Female
+        Source dataset: 1840 Census: Population & Other Data [US, States & Counties]
+            Source table: NT29. Sex
+                Universe: Persons
+                    Variable: [ACV002] Female
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu
