@@ -1,0 +1,22 @@
+{
+  "name": "durham-inequality-county-data",
+  "version": "1.0.0",
+  "description": "Generates timeseries of historical county-level data for Durham County.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timstallmann/durham-inequality-county-data.git"
+  },
+  "author": "Tim Stallmann",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/timstallmann/durham-inequality-county-data/issues"
+  },
+  "homepage": "https://github.com/timstallmann/durham-inequality-county-data#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
