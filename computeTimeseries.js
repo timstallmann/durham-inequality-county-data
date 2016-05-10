@@ -2,41 +2,41 @@
 
 var csv = require('csv');
 const fs = require('fs');
+const vm = require('vm');
 var program = require('commander');
 
 program
     .version('0.0.1')
-    .option('-b, --basePath [path]', 'Base path')
+    .option('-c, --configFile [path]', 'Javscript file which defines var config')
     .option('-o, --outputFile [filename]', 'Output file')
     .parse(process.argv);
 
-if (typeof program.basePath === 'undefined') {
-    program.basePath = '';
-}
-if (typeof program.outputFile === 'undefined') {
-    console.error('No output file given!');
+if (typeof program.configFile === 'undefined') {
+    console.error('No config file specified.');
     process.exit(1);
 }
-
-var raceHeader = ['year', 'gisjoin', 'filename', 'black', 'white', 'total'];
-var raceVariables = [
-    {
-        year: "1880",
-        gisjoin: "G5400350",
-        filename: "nhgis0008_ds23_1880_county.csv",
-        black: ["APP002"],
-        white: ["APP001"],
-        total: ["APP001", "APP002", "APP003", "APP004"]
-    },
-    {
-        year: "1890",
-        gisjoin: "G5400350",
-        filename: "nhgis0008_ds27_1890_county.csv",
-        black: ["AV0007", "AV0008"],
-        white: ["AV0001", "AV0002", "AV0003", "AV0004", "AV0005", "AV0006"],
-        total: ["AV0001", "AV0002", "AV0003", "AV0004", "AV0005", "AV0006", "AV0007", "AV0008"]
+else {
+    try {
+        var includeInThisContext = function(path) {
+            var code = fs.readFileSync(path);
+            vm.runInThisContext(code, path);
+        }.bind(this);
+        includeInThisContext(__dirname + '/' + program.configFile);
     }
-];
+    catch (e) {
+        console.error(e);
+        console.error('Config file does not exist or is not readable');
+        process.exit(1);
+    }
+}
+
+if (typeof program.outputFile === 'undefined') {
+    console.error('No output file given! Logging to console instead.');
+    var outputFile = process.stdout;
+}
+else {
+    var outputFile = fs.createWriteStream(program.outputFile);
+}
 
 var timeSeriesCalculate = function(year, outputStream) {
     return function(err, data) {
@@ -66,13 +66,15 @@ var timeSeriesCalculate = function(year, outputStream) {
                     yearOutput[property] = year[property];
                 }
             }
+            for (var calculation in config.derivedVariables) {
+                yearOutput[calculation] = config.derivedVariables[calculation](yearOutput);
+            }
             outputStream.write(yearOutput);
         });
     }
 };
 
 var outputStringify = csv.stringify();
-var outputFile = fs.createWriteStream(program.outputFile);
 outputStringify.on('readable', function() {
     while (row = outputStringify.read()) {
         outputFile.write(row);
@@ -82,9 +84,9 @@ outputStringify.on('readable', function() {
 outputStringify.on('finish', function() {
     outputFile.end();
 });
-outputStringify.write(raceHeader);
+outputStringify.write(config.header);
 
-for (var i = 0; i < raceVariables.length; i++) {
-    var year = raceVariables[i];
-    fs.readFile(program.basePath + '/' + year.filename, timeSeriesCalculate(year, outputStringify));
+for (var i = 0; i < config.nhgisVariables.length; i++) {
+    var year = config.nhgisVariables[i];
+    fs.readFile(config.basePath + '/' + year.filename, timeSeriesCalculate(year, outputStringify));
 }
