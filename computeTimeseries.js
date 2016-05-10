@@ -38,7 +38,7 @@ else {
     var outputFile = fs.createWriteStream(program.outputFile);
 }
 
-var timeSeriesCalculate = function(year, outputStream) {
+var timeSeriesCalculate = function(year, header, outputStream) {
     return function(err, data) {
         if (err) {
             throw err;
@@ -50,24 +50,30 @@ var timeSeriesCalculate = function(year, outputStream) {
             })[0];
 
             var yearOutput = {};
-            for (var property in year) {
-                if (year[property] instanceof Array) {
-                    yearOutput[property] = year[property].reduce(function(previousValue, colName, curIndex, curArray) {
-                        if (yearDataBase.hasOwnProperty(colName)) {
-                            return previousValue + parseFloat(yearDataBase[colName]);
-                        }
-                        else {
-                            return previousValue;
-                        }
-                    }, 0);
+            for (var i = 0; i < header.length; i++) {
+                var property = header[i];
+                if (year.hasOwnProperty(property)) {
+                    if (year[property] instanceof Array) {
+                        yearOutput[property] = year[property].reduce(function (previousValue, colName, curIndex, curArray) {
+                            if (yearDataBase.hasOwnProperty(colName)) {
+                                return previousValue + parseFloat(yearDataBase[colName]);
+                            }
+                            else {
+                                return previousValue;
+                            }
+                        }, 0);
 
+                    }
+                    else {
+                        yearOutput[property] = year[property];
+                    }
+                }
+                else if (config.derivedVariables.hasOwnProperty(property)) {
+                    yearOutput[property] = config.derivedVariables[property](yearOutput);
                 }
                 else {
-                    yearOutput[property] = year[property];
+                    yearOutput[property] = '-';
                 }
-            }
-            for (var calculation in config.derivedVariables) {
-                yearOutput[calculation] = config.derivedVariables[calculation](yearOutput);
             }
             outputStream.write(yearOutput);
         });
@@ -88,5 +94,5 @@ outputStringify.write(config.header);
 
 for (var i = 0; i < config.nhgisVariables.length; i++) {
     var year = config.nhgisVariables[i];
-    fs.readFile(config.basePath + '/' + year.filename, timeSeriesCalculate(year, outputStringify));
+    fs.readFile(config.basePath + '/' + year.filename, timeSeriesCalculate(year, config.header, outputStringify));
 }
