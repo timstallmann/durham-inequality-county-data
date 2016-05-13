@@ -23,7 +23,9 @@
     "compute-data": "node computeTimeseries.js -c nhgis_sources -o dist/data",
     "browserify": "browserify tableViewer.js -o dist/scripts/bundle.js",
     "copy-html": "cp *.html dist/",
-    "copy-handsontable": "cp bower_components/handsontable/dist/handsontable.min.css dist/css"
+    "copy-handsontable": "cp bower_components/handsontable/dist/handsontable.min.css dist/css",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
