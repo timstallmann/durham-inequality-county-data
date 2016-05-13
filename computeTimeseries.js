@@ -7,38 +7,11 @@ var program = require('commander');
 
 program
     .version('0.0.1')
-    .option('-c, --configFile [path]', 'Javscript file which defines var config')
-    .option('-o, --outputFile [filename]', 'Output file')
+    .option('-c, --baseDir [path]', 'Base path to config files.')
+    .option('-o, --outputDir [filename]', 'Directory for output files')
     .parse(process.argv);
 
-if (typeof program.configFile === 'undefined') {
-    console.error('No config file specified.');
-    process.exit(1);
-}
-else {
-    try {
-        var includeInThisContext = function(path) {
-            var code = fs.readFileSync(path);
-            vm.runInThisContext(code, path);
-        }.bind(this);
-        includeInThisContext(__dirname + '/' + program.configFile);
-    }
-    catch (e) {
-        console.error(e);
-        console.error('Config file does not exist or is not readable');
-        process.exit(1);
-    }
-}
-
-if (typeof program.outputFile === 'undefined') {
-    console.error('No output file given! Logging to console instead.');
-    var outputFile = process.stdout;
-}
-else {
-    var outputFile = fs.createWriteStream(program.outputFile);
-}
-
-var timeSeriesCalculate = function(year, header, outputStream) {
+var timeSeriesCalculate = function(year, header, outputStringifyStream) {
     return function(err, data) {
         if (err) {
             throw err;
@@ -50,49 +23,90 @@ var timeSeriesCalculate = function(year, header, outputStream) {
             })[0];
 
             var yearOutput = {};
-            for (var i = 0; i < header.length; i++) {
-                var property = header[i];
-                if (year.hasOwnProperty(property)) {
-                    if (year[property] instanceof Array) {
-                        yearOutput[property] = year[property].reduce(function (previousValue, colName, curIndex, curArray) {
-                            if (yearDataBase.hasOwnProperty(colName)) {
-                                return previousValue + parseFloat(yearDataBase[colName]);
-                            }
-                            else {
-                                return previousValue;
-                            }
-                        }, 0);
+            header.forEach(
+                function(property, index, array) {
+                    if (year.hasOwnProperty(property)) {
+                        if (year[property] instanceof Array) {
+                            yearOutput[property] = year[property].reduce(function (previousValue, colName, curIndex, curArray) {
+                                if (yearDataBase.hasOwnProperty(colName)) {
+                                    return previousValue + parseFloat(yearDataBase[colName]);
+                                }
+                                else {
+                                    return previousValue;
+                                }
+                            }, 0);
 
+                        }
+                        else {
+                            yearOutput[property] = year[property];
+                        }
+                    }
+                    else if (config.derivedVariables.hasOwnProperty(property)) {
+                        yearOutput[property] = config.derivedVariables[property](yearOutput);
                     }
                     else {
-                        yearOutput[property] = year[property];
+                        yearOutput[property] = '-';
                     }
                 }
-                else if (config.derivedVariables.hasOwnProperty(property)) {
-                    yearOutput[property] = config.derivedVariables[property](yearOutput);
-                }
-                else {
-                    yearOutput[property] = '-';
-                }
-            }
-            outputStream.write(yearOutput);
+            );
+            outputStringifyStream.write(yearOutput);
         });
     }
 };
 
-var outputStringify = csv.stringify();
-outputStringify.on('readable', function() {
-    while (row = outputStringify.read()) {
-        outputFile.write(row);
-    }
-});
+var processFile = function(config, outputFile) {
+    var outputStringify = csv.stringify();
+    outputStringify.on('readable', function() {
+        while (row = outputStringify.read()) {
+            outputFile.write(row);
+        }
+    });
 
-outputStringify.on('finish', function() {
-    outputFile.end();
-});
-outputStringify.write(config.header);
+// Final callback after no more data is being pushed to the stream.
+    outputStringify.on('finish', function() {
+        outputFile.end();
+    });
+    outputStringify.write(config.header);
 
-for (var i = 0; i < config.nhgisVariables.length; i++) {
-    var year = config.nhgisVariables[i];
-    fs.readFile(config.basePath + '/' + year.filename, timeSeriesCalculate(year, config.header, outputStringify));
+    config.nhgisVariables.forEach(
+        function(item, index, array) {
+            fs.readFile(config.basePath + '/' + item.filename, timeSeriesCalculate(item, config.header, outputStringify));
+        }
+    );
+};
+
+if (program.baseDir === 'undefined') {
+    console.error('No config directory specified.');
+    process.exit(1);
 }
+else {
+    fs.readdir(__dirname + '/' + program.baseDir, function(err, files) {
+       files.forEach(function (filePath, index, array) {
+           if (filePath.endsWith(".js")) {
+               try {
+                   var includeInThisContext = function (path) {
+                       var code = fs.readFileSync(path);
+                       vm.runInThisContext(code, path);
+                   }.bind(this);
+                   includeInThisContext(__dirname + '/' + program.baseDir + '/' + filePath);
+
+                   // Check if outputdir is specified.
+                   var outputFile;
+                   if (typeof program.outputDir === 'undefined') {
+                       outputFile = process.stdout;
+                   }
+                   else {
+                       outputFile = fs.createWriteStream(__dirname + '/' + program.outputDir + '/' + filePath.substr(0,filePath.length -3) + '.csv');
+                   }
+                   processFile(config, outputFile);
+               }
+               catch (e) {
+                   console.error(e);
+                   console.error('CI not readable');
+               }
+           }
+        });
+    });
+}
+
+

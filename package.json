@@ -2,9 +2,6 @@
   "name": "durham-inequality-county-data",
   "version": "1.0.0",
   "description": "Generates timeseries of historical county-level data for Durham County.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timstallmann/durham-inequality-county-data.git"
@@ -18,5 +15,23 @@
   "dependencies": {
     "commander": "^2.9.0",
     "csv": "^0.4.6"
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "^0.4.2"
+  },
+  "scripts": {
+    "compute-data": "node computeTimeseries.js -c nhgis_sources -o dist/data",
+    "browserify": "browserify tableViewer.js -o dist/scripts/bundle.js",
+    "copy-html": "cp *.html dist/",
+    "copy-handsontable": "cp bower_components/handsontable/dist/handsontable.min.css dist/css"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "pre-deploy": [
+      "compute-data",
+      "browserify",
+      "copy-html",
+      "copy-handsontable"
+    ]
   }
 }
