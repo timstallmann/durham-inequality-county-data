@@ -4,7 +4,7 @@ var http = require('http');
 
 var sourceFileName = "race.csv";
 
-http.get('http://' + window.location.host + '/county/dist/data/' + sourceFileName, function(res) {
+http.get('http://' + window.location.host + '/data/' + sourceFileName, function(res) {
     var data = "";
 
     res.on('data', function (d) {
