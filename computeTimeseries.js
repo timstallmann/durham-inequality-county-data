@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var csv = require('csv');
+var parse = require('csv-parse/lib/sync');
 const fs = require('fs');
 const vm = require('vm');
 var program = require('commander');
@@ -11,68 +12,82 @@ program
     .option('-o, --outputDir [filename]', 'Directory for output files')
     .parse(process.argv);
 
-var timeSeriesCalculate = function(year, header, outputStringifyStream) {
-    return function(err, data) {
-        if (err) {
-            throw err;
-        }
+var timeSeriesCalculate = function(data, year, header, output) {
+        var input = parse(data, {columns: true});
+        var yearDataBase = input.filter(function(a) {
+            return (a.GISJOIN == year.gisjoin);
+        })[0];
 
-        csv.parse(data, {columns: true}, function(err, output) {
-            var yearDataBase = output.filter(function(a) {
-                return (a.GISJOIN == year.gisjoin);
-            })[0];
+        var yearOutput = {};
+        header.forEach(
+            function(property, index, array) {
+                if (year.hasOwnProperty(property)) {
+                    if (year[property] instanceof Array) {
+                        yearOutput[property] = year[property].reduce(function (previousValue, colName, curIndex, curArray) {
+                            if (yearDataBase.hasOwnProperty(colName) && !isNaN(parseFloat(yearDataBase[colName]))) {
+                                return previousValue + parseFloat(yearDataBase[colName]);
+                            }
+                            else {
+                                return previousValue;
+                            }
+                        }, 0);
 
-            var yearOutput = {};
-            header.forEach(
-                function(property, index, array) {
-                    if (year.hasOwnProperty(property)) {
-                        if (year[property] instanceof Array) {
-                            yearOutput[property] = year[property].reduce(function (previousValue, colName, curIndex, curArray) {
-                                if (yearDataBase.hasOwnProperty(colName)) {
-                                    return previousValue + parseFloat(yearDataBase[colName]);
-                                }
-                                else {
-                                    return previousValue;
-                                }
-                            }, 0);
-
-                        }
-                        else {
-                            yearOutput[property] = year[property];
-                        }
-                    }
-                    else if (config.derivedVariables.hasOwnProperty(property)) {
-                        yearOutput[property] = config.derivedVariables[property](yearOutput);
                     }
                     else {
-                        yearOutput[property] = '-';
+                        yearOutput[property] = year[property];
                     }
                 }
-            );
-            outputStringifyStream.write(yearOutput);
-        });
-    }
-};
+                else if (config.derivedVariables.hasOwnProperty(property)) {
+                    yearOutput[property] = config.derivedVariables[property](yearOutput);
+                }
+                else {
+                    yearOutput[property] = '-';
+                }
+            }
+        );
+        output.push(yearOutput);
+    };
 
 var processFile = function(config, outputFile) {
-    var outputStringify = csv.stringify();
-    outputStringify.on('readable', function() {
-        while (row = outputStringify.read()) {
-            outputFile.write(row);
-        }
-    });
-
-// Final callback after no more data is being pushed to the stream.
-    outputStringify.on('finish', function() {
-        outputFile.end();
-    });
-    outputStringify.write(config.header);
-
+    var inputFilesRemaining = config.nhgisVariables.length;
+    var outputRows = Array();
     config.nhgisVariables.forEach(
         function(item, index, array) {
-            fs.readFile(config.basePath + '/' + item.filename, timeSeriesCalculate(item, config.header, outputStringify));
+            fs.readFile(config.basePath + '/' + item.filename, function(err, data) {
+                if (err) {
+                    console.log(err);
+                }
+                else {
+                    timeSeriesCalculate(data, item, config.header, outputRows);
+                }
+                inputFilesRemaining -= 1;
+
+                if (inputFilesRemaining == 0) {
+                    outputRows.sort(function (a, b) { return Number(a.year) - Number(b.year); });
+                    writeOutput(config.header, outputRows, outputFile);
+                }
+            });
         }
     );
+};
+
+var writeOutput = function(header, rows, file) {
+    var outputStringify = csv.stringify();
+
+    outputStringify.on('readable', function() {
+        while (row = outputStringify.read()) {
+            file.write(row);
+        }
+    });
+
+    // Final callback after no more data is being pushed to the stream.
+    outputStringify.on('finish', function() {
+        file.end();
+    });
+
+    outputStringify.write(header);
+    rows.forEach(function (item) { outputStringify.write(item); });
+    outputStringify.end();
 };
 
 if (program.baseDir === 'undefined') {
