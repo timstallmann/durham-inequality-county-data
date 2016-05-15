@@ -1,0 +1,219 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0013_ts_nominal_1980_county'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Geographic Integration Methods
+    - Source Data
+    - Citation and Use
+ 
+Detailed notes on time series design and comparability are available at: 
+    https://assets.nhgis.org/NHGIS_Time_Series_Tables.pdf 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout:     Time varies by file
+Geographic level:       County (by State)
+Geographic integration: Nominal
+Year:                   1980
+ 
+Tables:
+ 
+1. Persons Excluding Those of Some Other Race by Sex [2] by Race [5*]
+   Code: AZ8
+   Subdivided into 4 files:
+       nhgis0013_ts_1980_county.csv
+       nhgis0013_ts_1990_county.csv
+       nhgis0013_ts_2000_county.csv
+       nhgis0013_ts_2010_county.csv
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STATE:       NHGIS Integrated State Name
+        STATEFP:     FIPS State Code
+        STATENH:     NHGIS Integrated State Code
+        COUNTY:      NHGIS Integrated County Name
+        COUNTYFP:    FIPS County Code
+        COUNTYNH:    NHGIS Integrated County Code
+        NAME:        Area Name, 1980
+ 
+Table 1: (AZ8) Persons Excluding Those of Some Other Race by Sex [2] by Race [5*]
+        AZ8AA1980:   Persons: Male ~ White (single race)
+        AZ8AB1980:   Persons: Male ~ Black or African American (single race)
+        AZ8AC1980:   Persons: Male ~ American Indian and Alaska Native (single race)
+        AZ8AD1980:   Persons: Male ~ Asian and Pacific Islander (single race)
+        AZ8AE1980:   Persons: Male ~ Two or More Races
+        AZ8AF1980:   Persons: Female ~ White (single race)
+        AZ8AG1980:   Persons: Female ~ Black or African American (single race)
+        AZ8AH1980:   Persons: Female ~ American Indian and Alaska Native (single race)
+        AZ8AI1980:   Persons: Female ~ Asian and Pacific Islander (single race)
+        AZ8AJ1980:   Persons: Female ~ Two or More Races
+ 
+--------------------------------------------------------------------------------
+Geographic Integration Methods
+--------------------------------------------------------------------------------
+ 
+Nominal Integration:
+
+    Nominally integrated tables link geographic units across time according to
+    their names and codes, disregarding any changes in unit boundaries. The
+    identified geographic units match those from each census source, so the
+    spatial definitions and total number of units may vary from one time to
+    another (e.g., a city may annex land, a tract may be split in two, a new
+    county may be created, etc.). The tables include data for a particular
+    geographic unit only at times when the unit's name or code was in use,
+    resulting in truncated time series for some areas.
+    
+    Users should be cautious when interpreting changes in nominally integrated
+    time series because a single unit code may refer to distinctly different
+    areas at different times. If you are uncertain whether any boundaries
+    changed in your areas of interest, we recommend inspecting NHGIS boundary
+    files to confirm. (At this time, boundary files are available for all units
+    and years in nominally integrated time series *except* 1970 places and
+    county subdivisions.)
+    
+    Alternatively, for some topics and time periods, NHGIS provides
+    "geographically standardized" time series, which provide data from multiple
+    times for a single census's geographic units (e.g., 2000 and 2010 data for
+    2010 census units). A disadvantage of standardized time series is that, in
+    areas where source units do not nest perfectly within a unit of the standard
+    year (e.g., where a source 2000 unit intersects multiple 2010 units), NHGIS
+    applies interpolation to standardize the data, a process which may
+    occasionally produce substantial errors.
+
+Complete documentation on time series integration methods is available at:
+    https://www.nhgis.org/documentation/time-series
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Additional documentation on NHGIS data sources is available at:
+    https://www.nhgis.org/documentation/tabular-data
+
+Table 1: (AZ8) Persons Excluding Those of Some Other Race by Sex [2] by Race [5*]
+ 
+    Time series AA: Persons: Male ~ White (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ001] White >> Male >> Under 5 years
+                    Variable: [DGJ002] White >> Male >> 5-14 years
+                    Variable: [DGJ003] White >> Male >> 15-59 years
+                    Variable: [DGJ004] White >> Male >> 60-64 years
+                    Variable: [DGJ005] White >> Male >> 65 years and over
+ 
+    Time series AB: Persons: Male ~ Black or African American (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ011] Black >> Male >> Under 5 years
+                    Variable: [DGJ012] Black >> Male >> 5-14 years
+                    Variable: [DGJ013] Black >> Male >> 15-59 years
+                    Variable: [DGJ014] Black >> Male >> 60-64 years
+                    Variable: [DGJ015] Black >> Male >> 65 years and over
+ 
+    Time series AC: Persons: Male ~ American Indian and Alaska Native (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ021] American Indian, Eskimo, and Aleut >> Male >> Under 5 years
+                    Variable: [DGJ022] American Indian, Eskimo, and Aleut >> Male >> 5-14 years
+                    Variable: [DGJ023] American Indian, Eskimo, and Aleut >> Male >> 15-59 years
+                    Variable: [DGJ024] American Indian, Eskimo, and Aleut >> Male >> 60-64 years
+                    Variable: [DGJ025] American Indian, Eskimo, and Aleut >> Male >> 65 years and over
+ 
+    Time series AD: Persons: Male ~ Asian and Pacific Islander (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ031] Asian and Pacific Islander >> Male >> Under 5 years
+                    Variable: [DGJ032] Asian and Pacific Islander >> Male >> 5-14 years
+                    Variable: [DGJ033] Asian and Pacific Islander >> Male >> 15-59 years
+                    Variable: [DGJ034] Asian and Pacific Islander >> Male >> 60-64 years
+                    Variable: [DGJ035] Asian and Pacific Islander >> Male >> 65 years and over
+ 
+    Time series AE: Persons: Male ~ Two or More Races
+        *NOT AVAILABLE for this time*
+ 
+    Time series AF: Persons: Female ~ White (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ006] White >> Female >> Under 5 years
+                    Variable: [DGJ007] White >> Female >> 5-14 years
+                    Variable: [DGJ008] White >> Female >> 15-59 years
+                    Variable: [DGJ009] White >> Female >> 60-64 years
+                    Variable: [DGJ010] White >> Female >> 65 years and over
+ 
+    Time series AG: Persons: Female ~ Black or African American (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ016] Black >> Female >> Under 5 years
+                    Variable: [DGJ017] Black >> Female >> 5-14 years
+                    Variable: [DGJ018] Black >> Female >> 15-59 years
+                    Variable: [DGJ019] Black >> Female >> 60-64 years
+                    Variable: [DGJ020] Black >> Female >> 65 years and over
+ 
+    Time series AH: Persons: Female ~ American Indian and Alaska Native (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ026] American Indian, Eskimo, and Aleut >> Female >> Under 5 years
+                    Variable: [DGJ027] American Indian, Eskimo, and Aleut >> Female >> 5-14 years
+                    Variable: [DGJ028] American Indian, Eskimo, and Aleut >> Female >> 15-59 years
+                    Variable: [DGJ029] American Indian, Eskimo, and Aleut >> Female >> 60-64 years
+                    Variable: [DGJ030] American Indian, Eskimo, and Aleut >> Female >> 65 years and over
+ 
+    Time series AI: Persons: Female ~ Asian and Pacific Islander (single race)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT16B. Race by Sex by Age
+                Universe: Persons of Specified Races
+                    Variable: [DGJ036] Asian and Pacific Islander >> Female >> Under 5 years
+                    Variable: [DGJ037] Asian and Pacific Islander >> Female >> 5-14 years
+                    Variable: [DGJ038] Asian and Pacific Islander >> Female >> 15-59 years
+                    Variable: [DGJ039] Asian and Pacific Islander >> Female >> 60-64 years
+                    Variable: [DGJ040] Asian and Pacific Islander >> Female >> 65 years and over
+ 
+    Time series AJ: Persons: Female ~ Two or More Races
+        *NOT AVAILABLE for this time*
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu

@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Codebook for NHGIS data file 'nhgis0008_ts_nominal_1800_county'
+Codebook for NHGIS data file 'nhgis0012_ts_nominal_1970_county'
 --------------------------------------------------------------------------------
  
 Contents
@@ -19,36 +19,17 @@ Data Summary
 Time series layout:     Time varies by file
 Geographic level:       County (by State)
 Geographic integration: Nominal
-Year:                   1800
+Year:                   1970
  
 Tables:
  
-1. Total Population
-   Code: A00
-   Subdivided into 23 files:
-       nhgis0008_ts_1790_county.csv
-       nhgis0008_ts_1800_county.csv
-       nhgis0008_ts_1810_county.csv
-       nhgis0008_ts_1820_county.csv
-       nhgis0008_ts_1830_county.csv
-       nhgis0008_ts_1840_county.csv
-       nhgis0008_ts_1850_county.csv
-       nhgis0008_ts_1860_county.csv
-       nhgis0008_ts_1870_county.csv
-       nhgis0008_ts_1880_county.csv
-       nhgis0008_ts_1890_county.csv
-       nhgis0008_ts_1900_county.csv
-       nhgis0008_ts_1910_county.csv
-       nhgis0008_ts_1920_county.csv
-       nhgis0008_ts_1930_county.csv
-       nhgis0008_ts_1940_county.csv
-       nhgis0008_ts_1950_county.csv
-       nhgis0008_ts_1960_county.csv
-       nhgis0008_ts_1970_county.csv
-       nhgis0008_ts_1980_county.csv
-       nhgis0008_ts_1990_county.csv
-       nhgis0008_ts_2000_county.csv
-       nhgis0008_ts_2010_county.csv
+1. Persons by Sex [2] by Race [5*]
+   Code: B21
+   Subdivided into 4 files:
+       nhgis0012_ts_1970_county.csv
+       nhgis0012_ts_1990_county.csv
+       nhgis0012_ts_2000_county.csv
+       nhgis0012_ts_2010_county.csv
  
 --------------------------------------------------------------------------------
 Data Dictionary
@@ -63,10 +44,19 @@ Context Fields
         COUNTY:      NHGIS Integrated County Name
         COUNTYFP:    FIPS County Code
         COUNTYNH:    NHGIS Integrated County Code
-        NAME:        Area Name, 1800
+        NAME:        Area Name, 1970
  
-Table 1: (A00) Total Population
-        A00AA1800:   Persons: Total
+Table 1: (B21) Persons by Sex [2] by Race [5*]
+        B21AA1970:   Persons: Male ~ White (single race)
+        B21AB1970:   Persons: Male ~ Black or African American (single race)
+        B21AC1970:   Persons: Male ~ American Indian and Alaska Native (single race)
+        B21AD1970:   Persons: Male ~ Asian and Pacific Islander and Other Race (single race)
+        B21AE1970:   Persons: Male ~ Two or More Races
+        B21AF1970:   Persons: Female ~ White (single race)
+        B21AG1970:   Persons: Female ~ Black or African American (single race)
+        B21AH1970:   Persons: Female ~ American Indian and Alaska Native (single race)
+        B21AI1970:   Persons: Female ~ Asian and Pacific Islander and Other Race (single race)
+        B21AJ1970:   Persons: Female ~ Two or More Races
  
 --------------------------------------------------------------------------------
 Geographic Integration Methods
@@ -110,13 +100,71 @@ Source Data
 Additional documentation on NHGIS data sources is available at:
     https://www.nhgis.org/documentation/tabular-data
 
-Table 1: (A00) Total Population
+Table 1: (B21) Persons by Sex [2] by Race [5*]
  
-    Time series AA: Persons: Total
-        Source dataset: 1800 Census: Population Data [US, States & Counties]
-            Source table: NT2. Total Population (from 1900 Census Report)
+    Time series AA: Persons: Male ~ White (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
                 Universe: Persons
-                    Variable: [AAU001] Total
+                    Variable: [CEB001] Male >> White
+ 
+    Time series AB: Persons: Male ~ Black or African American (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
+                Universe: Persons
+                    Variable: [CEB002] Male >> Negro
+ 
+    Time series AC: Persons: Male ~ American Indian and Alaska Native (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
+                Universe: Persons
+                    Variable: [CEB003] Male >> Indian
+ 
+    Time series AD: Persons: Male ~ Asian and Pacific Islander and Other Race (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
+                Universe: Persons
+                    Variable: [CEB004] Male >> Japanese
+                    Variable: [CEB005] Male >> Chinese
+                    Variable: [CEB006] Male >> Filipino
+                    Variable: [CEB007] Male >> Hawaiian
+                    Variable: [CEB008] Male >> Korean
+                    Variable: [CEB009] Male >> Other
+ 
+    Time series AE: Persons: Male ~ Two or More Races
+        *NOT AVAILABLE for this time*
+ 
+    Time series AF: Persons: Female ~ White (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
+                Universe: Persons
+                    Variable: [CEB010] Female >> White
+ 
+    Time series AG: Persons: Female ~ Black or African American (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
+                Universe: Persons
+                    Variable: [CEB011] Female >> Negro
+ 
+    Time series AH: Persons: Female ~ American Indian and Alaska Native (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
+                Universe: Persons
+                    Variable: [CEB012] Female >> Indian
+ 
+    Time series AI: Persons: Female ~ Asian and Pacific Islander and Other Race (single race)
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT1. Sex by Race
+                Universe: Persons
+                    Variable: [CEB013] Female >> Japanese
+                    Variable: [CEB014] Female >> Chinese
+                    Variable: [CEB015] Female >> Filipino
+                    Variable: [CEB016] Female >> Hawaiian
+                    Variable: [CEB017] Female >> Korean
+                    Variable: [CEB018] Female >> Other
+ 
+    Time series AJ: Persons: Female ~ Two or More Races
+        *NOT AVAILABLE for this time*
  
 --------------------------------------------------------------------------------
 Citation and Use of NHGIS Data

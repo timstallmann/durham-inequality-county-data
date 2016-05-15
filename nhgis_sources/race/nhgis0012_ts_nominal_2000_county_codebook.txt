@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Codebook for NHGIS data file 'nhgis0008_ts_nominal_1830_county'
+Codebook for NHGIS data file 'nhgis0012_ts_nominal_2000_county'
 --------------------------------------------------------------------------------
  
 Contents
@@ -19,60 +19,17 @@ Data Summary
 Time series layout:     Time varies by file
 Geographic level:       County (by State)
 Geographic integration: Nominal
-Year:                   1830
+Year:                   2000
  
 Tables:
  
-1. Total Population
-   Code: A00
-   Subdivided into 23 files:
-       nhgis0008_ts_1790_county.csv
-       nhgis0008_ts_1800_county.csv
-       nhgis0008_ts_1810_county.csv
-       nhgis0008_ts_1820_county.csv
-       nhgis0008_ts_1830_county.csv
-       nhgis0008_ts_1840_county.csv
-       nhgis0008_ts_1850_county.csv
-       nhgis0008_ts_1860_county.csv
-       nhgis0008_ts_1870_county.csv
-       nhgis0008_ts_1880_county.csv
-       nhgis0008_ts_1890_county.csv
-       nhgis0008_ts_1900_county.csv
-       nhgis0008_ts_1910_county.csv
-       nhgis0008_ts_1920_county.csv
-       nhgis0008_ts_1930_county.csv
-       nhgis0008_ts_1940_county.csv
-       nhgis0008_ts_1950_county.csv
-       nhgis0008_ts_1960_county.csv
-       nhgis0008_ts_1970_county.csv
-       nhgis0008_ts_1980_county.csv
-       nhgis0008_ts_1990_county.csv
-       nhgis0008_ts_2000_county.csv
-       nhgis0008_ts_2010_county.csv
- 
-2. Persons by Sex [2]
-   Code: A08
-   Subdivided into 20 files:
-       nhgis0008_ts_1820_county.csv
-       nhgis0008_ts_1830_county.csv
-       nhgis0008_ts_1840_county.csv
-       nhgis0008_ts_1850_county.csv
-       nhgis0008_ts_1860_county.csv
-       nhgis0008_ts_1870_county.csv
-       nhgis0008_ts_1880_county.csv
-       nhgis0008_ts_1890_county.csv
-       nhgis0008_ts_1900_county.csv
-       nhgis0008_ts_1910_county.csv
-       nhgis0008_ts_1920_county.csv
-       nhgis0008_ts_1930_county.csv
-       nhgis0008_ts_1940_county.csv
-       nhgis0008_ts_1950_county.csv
-       nhgis0008_ts_1960_county.csv
-       nhgis0008_ts_1970_county.csv
-       nhgis0008_ts_1980_county.csv
-       nhgis0008_ts_1990_county.csv
-       nhgis0008_ts_2000_county.csv
-       nhgis0008_ts_2010_county.csv
+1. Persons by Sex [2] by Race [5*]
+   Code: B21
+   Subdivided into 4 files:
+       nhgis0012_ts_1970_county.csv
+       nhgis0012_ts_1990_county.csv
+       nhgis0012_ts_2000_county.csv
+       nhgis0012_ts_2010_county.csv
  
 --------------------------------------------------------------------------------
 Data Dictionary
@@ -87,14 +44,19 @@ Context Fields
         COUNTY:      NHGIS Integrated County Name
         COUNTYFP:    FIPS County Code
         COUNTYNH:    NHGIS Integrated County Code
-        NAME:        Area Name, 1830
+        NAME:        Area Name, 2000
  
-Table 1: (A00) Total Population
-        A00AA1830:   Persons: Total
- 
-Table 2: (A08) Persons by Sex [2]
-        A08AA1830:   Persons: Male
-        A08AB1830:   Persons: Female
+Table 1: (B21) Persons by Sex [2] by Race [5*]
+        B21AA2000:   Persons: Male ~ White (single race)
+        B21AB2000:   Persons: Male ~ Black or African American (single race)
+        B21AC2000:   Persons: Male ~ American Indian and Alaska Native (single race)
+        B21AD2000:   Persons: Male ~ Asian and Pacific Islander and Other Race (single race)
+        B21AE2000:   Persons: Male ~ Two or More Races
+        B21AF2000:   Persons: Female ~ White (single race)
+        B21AG2000:   Persons: Female ~ Black or African American (single race)
+        B21AH2000:   Persons: Female ~ American Indian and Alaska Native (single race)
+        B21AI2000:   Persons: Female ~ Asian and Pacific Islander and Other Race (single race)
+        B21AJ2000:   Persons: Female ~ Two or More Races
  
 --------------------------------------------------------------------------------
 Geographic Integration Methods
@@ -138,28 +100,71 @@ Source Data
 Additional documentation on NHGIS data sources is available at:
     https://www.nhgis.org/documentation/tabular-data
 
-Table 1: (A00) Total Population
+Table 1: (B21) Persons by Sex [2] by Race [5*]
  
-    Time series AA: Persons: Total
-        Source dataset: 1830 Census: Population Data [US, States & Counties]
-            Source table: NT1. Total Population
+    Time series AA: Persons: Male ~ White (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
                 Universe: Persons
-                    Variable: [ABN001] Total
+                    Variable: [FM0001] White alone >> Male
  
- 
-Table 2: (A08) Persons by Sex [2]
- 
-    Time series AA: Persons: Male
-        Source dataset: 1830 Census: Population Data [US, States & Counties]
-            Source table: NT16. Sex
+    Time series AB: Persons: Male ~ Black or African American (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
                 Universe: Persons
-                    Variable: [ABR001] Male
+                    Variable: [FM0003] Black or African American alone >> Male
  
-    Time series AB: Persons: Female
-        Source dataset: 1830 Census: Population Data [US, States & Counties]
-            Source table: NT16. Sex
+    Time series AC: Persons: Male ~ American Indian and Alaska Native (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
                 Universe: Persons
-                    Variable: [ABR002] Female
+                    Variable: [FM0005] American Indian and Alaska Native alone >> Male
+ 
+    Time series AD: Persons: Male ~ Asian and Pacific Islander and Other Race (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
+                Universe: Persons
+                    Variable: [FM0007] Asian alone >> Male
+                    Variable: [FM0009] Native Hawaiian and Other Pacific Islander alone >> Male
+                    Variable: [FM0011] Some other race alone >> Male
+ 
+    Time series AE: Persons: Male ~ Two or More Races
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
+                Universe: Persons
+                    Variable: [FM0013] Two or more races >> Male
+ 
+    Time series AF: Persons: Female ~ White (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
+                Universe: Persons
+                    Variable: [FM0002] White alone >> Female
+ 
+    Time series AG: Persons: Female ~ Black or African American (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
+                Universe: Persons
+                    Variable: [FM0004] Black or African American alone >> Female
+ 
+    Time series AH: Persons: Female ~ American Indian and Alaska Native (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
+                Universe: Persons
+                    Variable: [FM0006] American Indian and Alaska Native alone >> Female
+ 
+    Time series AI: Persons: Female ~ Asian and Pacific Islander and Other Race (single race)
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
+                Universe: Persons
+                    Variable: [FM0008] Asian alone >> Female
+                    Variable: [FM0010] Native Hawaiian and Other Pacific Islander alone >> Female
+                    Variable: [FM0012] Some other race alone >> Female
+ 
+    Time series AJ: Persons: Female ~ Two or More Races
+        Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+            Source table: NP012C. Total Population by Race by Sex
+                Universe: Persons
+                    Variable: [FM0014] Two or more races >> Female
  
 --------------------------------------------------------------------------------
 Citation and Use of NHGIS Data
