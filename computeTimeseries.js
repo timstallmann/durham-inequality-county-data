@@ -12,14 +12,14 @@ program
     .option('-o, --outputDir [filename]', 'Directory for output files')
     .parse(process.argv);
 
-var timeSeriesCalculate = function(data, year, header, output) {
+var timeSeriesCalculate = function(data, year, config, output) {
         var input = parse(data, {columns: true});
         var yearDataBase = input.filter(function(a) {
             return (a.GISJOIN == year.gisjoin);
         })[0];
 
         var yearOutput = {};
-        header.forEach(
+        config.header.forEach(
             function(property, index, array) {
                 if (year.hasOwnProperty(property)) {
                     if (year[property] instanceof Array) {
@@ -39,6 +39,9 @@ var timeSeriesCalculate = function(data, year, header, output) {
                 }
                 else if (config.derivedVariables.hasOwnProperty(property)) {
                     yearOutput[property] = config.derivedVariables[property](yearOutput);
+                    if (isNaN(yearOutput[property])) {
+                        yearOutput[property] = '-';
+                    }
                 }
                 else {
                     yearOutput[property] = '-';
@@ -63,7 +66,7 @@ var processFile = function(config, outputFile) {
                     console.log(err);
                 }
                 else {
-                    timeSeriesCalculate(data, item, config.header, outputRows);
+                    timeSeriesCalculate(data, item, config, outputRows);
                 }
                 inputFilesRemaining -= 1;
 
@@ -109,21 +112,21 @@ else {
                        vm.runInThisContext(code, path);
                    }.bind(this);
                    includeInThisContext(__dirname + '/' + program.baseDir + '/' + filePath);
-
-                   // Check if outputdir is specified.
-                   var outputFile;
-                   if (typeof program.outputDir === 'undefined') {
-                       outputFile = process.stdout;
-                   }
-                   else {
-                       outputFile = fs.createWriteStream(__dirname + '/' + program.outputDir + '/' + filePath.substr(0,filePath.length -3) + '.csv');
-                   }
-                   processFile(config, outputFile);
                }
                catch (e) {
+                   console.error("Error in reading config file");
                    console.error(e);
-                   console.error('CI not readable');
                }
+
+               // Check if outputdir is specified.
+               var outputFile;
+               if (typeof program.outputDir === 'undefined') {
+                   outputFile = process.stdout;
+               }
+               else {
+                   outputFile = fs.createWriteStream(__dirname + '/' + program.outputDir + '/' + filePath.substr(0, filePath.length - 3) + '.csv');
+               }
+               processFile(config, outputFile);
            }
         });
     });
