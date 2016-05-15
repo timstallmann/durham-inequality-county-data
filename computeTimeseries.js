@@ -43,6 +43,11 @@ var timeSeriesCalculate = function(data, year, header, output) {
                 else {
                     yearOutput[property] = '-';
                 }
+
+                // Convert numeric strings to numbers.
+                if (!isNaN(Number.parseFloat(yearOutput[property])) && isFinite(yearOutput[property])) {
+                    yearOutput[property] = Number.parseFloat(yearOutput[property]);
+                }
             }
         );
         output.push(yearOutput);
@@ -72,7 +77,7 @@ var processFile = function(config, outputFile) {
 };
 
 var writeOutput = function(header, rows, file) {
-    var outputStringify = csv.stringify();
+    var outputStringify = csv.stringify({ quotedString: true });
 
     outputStringify.on('readable', function() {
         while (row = outputStringify.read()) {
