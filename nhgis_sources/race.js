@@ -1,6 +1,6 @@
 var config = {
     basePath: 'nhgis_sources/race',
-    header: ['year', 'gisjoin', 'filename', 'black', 'white', 'total', 'pctBlack', 'notes'],
+    header: ['year', 'gisjoin', 'filename', 'black', 'white', 'total', 'pctBlack', 'pctPoC', 'notes'],
     nhgisVariables: [
         {
             year: "1880",
@@ -59,6 +59,15 @@ var config = {
             total: ["BV2001", "BV2002", "BV2003", "BV2004", "BV2005", "BV2006"]
         },
         {
+            year: "1950",
+            gisjoin: "G3700630",
+            filename: "nhgis0009_ds83_1950_county.csv",
+            black: [],
+            white: ["B1T001"],
+            total: ["B1T001", "B1T002"],
+            notes: "For this year the only race categories were white and non-white."
+        },
+        {
             year: "1960",
             gisjoin: "G3700630",
             filename: "nhgis0008_ds91_1960_county.csv",
@@ -110,6 +119,9 @@ var config = {
     derivedVariables: {
         pctBlack: function (row) {
             return (100 * (row.total > 0 ? row.black / row.total : 0)).toFixed(4);
+        },
+        pctPoC: function(row) {
+            return (row.total > 0 ? 100 * (1 - row.white / row.total) : 0).toFixed(4);
         }
     }
 }
