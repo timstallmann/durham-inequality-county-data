@@ -1,0 +1,5 @@
+"year","geography","filename","raw_median_hh_income","median_hh_income_2016_dollars","notes"
+1980,"durham_county","nhgis0014_ts_nominal_1980_county.csv",15395,44491.55,"-"
+1990,"durham_county","nhgis0014_ts_nominal_1990_county.csv",30526,55557.32,"-"
+2000,"durham_county","nhgis0014_ts_nominal_2000_county.csv",43337,59805.06,"-"
+2012,"durham_county","nhgis0014_ts_nominal_20125_county.csv",50997,53036.880000000005,"This is a 5-year ACS average"
