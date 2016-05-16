@@ -1,10 +1,9 @@
 var config = {
     basePath: 'nhgis_sources/race',
-    header: ['year', 'gisjoin', 'filename', 'black', 'white', 'total', 'percent_black', 'percent_nonwhite', 'notes'],
+    header: ['year', 'geography', 'filename', 'black', 'white', 'total', 'percent_black', 'percent_nonwhite', 'notes'],
     nhgisVariables: [
         {
             year: "1880",
-            gisjoin: "G3701350",
             filename: "nhgis0008_ds23_1880_county.csv",
             black: ["APP002"],
             white: ["APP001"],
@@ -13,7 +12,6 @@ var config = {
         },
         {
             year: "1890",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds27_1890_county.csv",
             black: ["AV0007", "AV0008"],
             white: ["AV0001", "AV0002", "AV0003", "AV0004", "AV0005", "AV0006"],
@@ -22,7 +20,6 @@ var config = {
         },
         {
             year: "1900",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds31_1900_county.csv",
             black: ["AZ3003", "AZ3004"],
             white: ["AZ2001"],
@@ -30,7 +27,6 @@ var config = {
         },
         {
             year: "1910",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds37_1910_county.csv",
             black: ["A30003", "A30004"],
             white: ["A30001", "A30002"],
@@ -38,7 +34,6 @@ var config = {
         },
         {
             year: "1920",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds43_1920_county.csv",
             black: ["A8L005", "A8L006"],
             white: ["A8L001", "A8L002", "A8L003", "A8L004"],
@@ -47,7 +42,6 @@ var config = {
         },
         {
             year: "1930",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds53_1930_county.csv",
             black: ["BDK003", "BDK004"],
             white: ["BDK001", "BDK002"],
@@ -55,7 +49,6 @@ var config = {
         },
         {
             year: "1940",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds77_1940_county.csv",
             black: ["BV2003", "BV2004"],
             white: ["BV2001", "BV2002"],
@@ -63,7 +56,6 @@ var config = {
         },
         {
             year: "1950",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds83_1950_county.csv",
             white: ["B1Z001", "B1Z002"],
             total: ["B1Z001", "B1Z002", "B1Z003", "B1Z004"],
@@ -71,7 +63,6 @@ var config = {
         },
         {
             year: "1960",
-            gisjoin: "G3700630",
             filename: "nhgis0008_ds91_1960_county.csv",
             black: ["B5S002", "B5S009"],
             white: ["B5S001", "B5S008"],
@@ -79,7 +70,6 @@ var config = {
         },
         {
             year: "1970",
-            gisjoin: "G3700630",
             filename: "nhgis0012_ts_nominal_1970_county.csv",
             black: ["B21AB1970", "B21AG1970"],
             white: ["B21AA1970", "B21AF1970"],
@@ -87,7 +77,6 @@ var config = {
         },
         {
             year: "1980",
-            gisjoin: "G3700630",
             filename: "nhgis0013_ts_nominal_1980_county.csv",
             black: ["AZ8AB1980", "AZ8AG1980"],
             white: ["AZ8AA1980", "AZ8AF1980"],
@@ -96,7 +85,6 @@ var config = {
         },
         {
             year: "1990",
-            gisjoin: "G3700630",
             filename: "nhgis0012_ts_nominal_1990_county.csv",
             black: ["B21AB1990", "B21AG1990"],
             white: ["B21AA1990", "B21AF1990"],
@@ -104,7 +92,6 @@ var config = {
         },
         {
             year: "2000",
-            gisjoin: "G3700630",
             filename: "nhgis0012_ts_nominal_2000_county.csv",
             black: ["B21AB2000", "B21AG2000"],
             white: ["B21AA2000", "B21AF2000"],
@@ -112,7 +99,6 @@ var config = {
         },
         {
             year: "2010",
-            gisjoin: "G3700630",
             filename: "nhgis0012_ts_nominal_2010_county.csv",
             black: ["B21AB2010", "B21AG2010"],
             white: ["B21AA2010", "B21AF2010"],
@@ -126,5 +112,21 @@ var config = {
         percent_nonwhite: function(row) {
             return (row.total > 0 ? 100 * (1 - row.white / row.total) : 0).toFixed(4);
         }
+    },
+    geographyFilterCallbacks: {
+        durham_county: function(row) {
+            if (row.year == '1880') {
+                return row.GISJOIN == 'G3701350';
+            }
+            else {
+                return row.GISJOIN == 'G3700630';
+            }
+        },
+        state: function(row) {
+                return row.GISJOIN.substr(0, 3) == "G37";
+            },
+        country: function(row) {
+                return true;
+            }
     }
 };
