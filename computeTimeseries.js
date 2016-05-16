@@ -152,7 +152,15 @@ var processFile = function(config, outputFile) {
                 inputFilesRemaining -= 1;
 
                 if (inputFilesRemaining == 0) {
-                    outputRows.sort(function (a, b) { return Number(a.year) - Number(b.year); });
+                    outputRows.sort(function (a, b) {
+                        if (Number(a.year) - Number(b.year) != 0) {
+                            return Number(a.year) - Number(b.year);
+                        }
+                        else {
+                            return a.geography > b.geography ? 1 :
+                                (a.geography < b.geography ? -1 : 0);
+                        }
+                    });
                     writeOutput(config.header, outputRows, outputFile);
                 }
             });
