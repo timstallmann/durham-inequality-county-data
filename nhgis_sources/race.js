@@ -2,14 +2,14 @@ var config = {
     basePath: 'nhgis_sources/race',
     header: ['year', 'geography', 'filename', 'black', 'hispanic', 'white', 'total', 'percent_black', 'percent_nonwhite', 'notes'],
     nhgisVariables: [
-        {
-            year: "1880",
-            filename: "nhgis0008_ds23_1880_county.csv",
-            black: ["APP002"],
-            white: ["APP001"],
-            total: ["APP001", "APP002", "APP003", "APP004"],
-            notes: "Race categories for this year were 'White', 'Colored', 'Chinese' and 'Indian'"
-        },
+        // {
+        //     year: "1880",
+        //     filename: "nhgis0008_ds23_1880_county.csv",
+        //     black: ["APP002"],
+        //     white: ["APP001"],
+        //     total: ["APP001", "APP002", "APP003", "APP004"],
+        //     notes: "Race categories for this year were 'White', 'Colored', 'Chinese' and 'Indian'"
+        // },
         {
             year: "1890",
             filename: "nhgis0008_ds27_1890_county.csv",
@@ -31,7 +31,8 @@ var config = {
             filename: "nhgis0008_ds37_1910_county.csv",
             black: ["A30003", "A30004"],
             white: ["A30001", "A30002"],
-            total: ["A30001", "A30002", "A30003", "A30004"]
+            total: ["A30001", "A30002", "A30003", "A30004"],
+            notes: "There's likely some incompatibility between 1900 and 1910 data"
         },
         {
             year: "1920",

@@ -7,7 +7,7 @@ const vm = require('vm');
 var program = require('commander');
 
 function convertToNumeric(value) {
-    if (!isNaN(Number.parseFloat(value)) && isFinite(value)) {
+    if (value != '-' && !isNaN(Number.parseFloat(value)) && isFinite(value)) {
         return Number.parseFloat(value);
     }
     else {
