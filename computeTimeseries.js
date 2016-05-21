@@ -8,7 +8,7 @@ var program = require('commander');
 
 program
     .version('0.0.1')
-    .option('-b, --baseDir [path]', 'Base path to config files.')
+    .option('-c, --configDir [path]', 'Base path to config files.')
     .option('-o, --outputDir [path]', 'Directory for output files')
     .parse(process.argv);
 
@@ -189,12 +189,12 @@ var writeOutput = function(header, rows, file) {
     outputStringify.end();
 };
 
-if (program.baseDir === 'undefined') {
+if (program.configDir === 'undefined') {
     console.error('No config directory specified.');
     process.exit(1);
 }
 else {
-    fs.readdir(__dirname + '/' + program.baseDir, function(err, files) {
+    fs.readdir(__dirname + '/' + program.configDir, function(err, files) {
        files.forEach(function (filePath, index, array) {
            if (filePath.endsWith(".js")) {
                try {
@@ -202,7 +202,7 @@ else {
                        var code = fs.readFileSync(path);
                        vm.runInThisContext(code, path);
                    }.bind(this);
-                   includeInThisContext(__dirname + '/' + program.baseDir + '/' + filePath);
+                   includeInThisContext(__dirname + '/' + program.configDir + '/' + filePath);
                }
                catch (e) {
                    console.error("Error in reading config file");
