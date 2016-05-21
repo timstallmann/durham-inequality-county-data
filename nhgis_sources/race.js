@@ -1,6 +1,6 @@
 var config = {
     basePath: 'nhgis_sources/race',
-    header: ['year', 'geography', 'filename', 'black', 'white', 'total', 'percent_black', 'percent_nonwhite', 'notes'],
+    header: ['year', 'geography', 'filename', 'black', 'hispanic', 'white', 'total', 'percent_black', 'percent_nonwhite', 'notes'],
     nhgisVariables: [
         {
             year: "1880",
@@ -77,32 +77,39 @@ var config = {
         },
         {
             year: "1980",
-            filename: "nhgis0013_ts_nominal_1980_county.csv",
-            black: ["AZ8AB1980", "AZ8AG1980"],
-            white: ["AZ8AA1980", "AZ8AF1980"],
-            total: ["AZ8AA1980", "AZ8AB1980", "AZ8AC1980", "AZ8AD1980", "AZ8AE1980", "AZ8AF1980", "AZ8AG1980", "AZ8AH1980", "AZ8AI1980", "AZ8AJ1980"],
-            notes: "Excludes 'other race'"
+            filename: "nhgis0015_ts_nominal_1980_county.csv",
+            black: ["AE7AB1980", "AE7AH1980"],
+            white: ["AE7AA1980"],
+            hispanic: ["AE7AG1980", "AE7AH1980", "AE7AI1980", "AE7AJ1980", "AE7AK1980", "AE7AL1980"],
+            total: ["AE7AA1980", "AE7AB1980", "AE7AC1980", "AE7AD1980", "AE7AE1980", "AE7AF1980", "AE7AG1980", "AE7AH1980", "AE7AI1980", "AE7AJ1980", "AE7AK1980", "AE7AL1980"],
+            notes: "Excludes 'other race'; Black includes Hispanic black"
         },
         {
             year: "1990",
-            filename: "nhgis0012_ts_nominal_1990_county.csv",
-            black: ["B21AB1990", "B21AG1990"],
-            white: ["B21AA1990", "B21AF1990"],
-            total: ["B21AA1990", "B21AB1990", "B21AC1990", "B21AD1990", "B21AE1990", "B21AF1990", "B21AG1990", "B21AH1990", "B21AI1990", "B21AJ1990"]
+            filename: "nhgis0015_ts_nominal_1990_county.csv",
+            black: ["AE7AB1990", "AE7AH1990"],
+            white: ["AE7AA1990"],
+            hispanic: ["AE7AG1990", "AE7AH1990", "AE7AI1990", "AE7AJ1990", "AE7AK1990", "AE7AL1990"],
+            total: ["AE7AA1990", "AE7AB1990", "AE7AC1990", "AE7AD1990", "AE7AE1990", "AE7AF1990", "AE7AG1990", "AE7AH1990", "AE7AI1990", "AE7AJ1990", "AE7AK1990", "AE7AL1990"],
+            notes: "Black includes Hispanic black"
         },
         {
             year: "2000",
-            filename: "nhgis0012_ts_nominal_2000_county.csv",
-            black: ["B21AB2000", "B21AG2000"],
-            white: ["B21AA2000", "B21AF2000"],
-            total: ["B21AA2000", "B21AB2000", "B21AC2000", "B21AD2000", "B21AE2000", "B21AF2000", "B21AG2000", "B21AH2000", "B21AI2000", "B21AJ2000"]
+            filename: "nhgis0015_ts_nominal_2000_county.csv",
+            black: ["AE7AB2000", "AE7AH2000"],
+            white: ["AE7AA2000"],
+            hispanic: ["AE7AG2000", "AE7AH2000", "AE7AI2000", "AE7AJ2000", "AE7AK2000", "AE7AL2000"],
+            total: ["AE7AA2000", "AE7AB2000", "AE7AC2000", "AE7AD2000", "AE7AE2000", "AE7AF2000", "AE7AG2000", "AE7AH2000", "AE7AI2000", "AE7AJ2000", "AE7AK2000", "AE7AL2000"],
+            notes: "Black includes Hispanic black"
         },
         {
             year: "2010",
-            filename: "nhgis0012_ts_nominal_2010_county.csv",
-            black: ["B21AB2010", "B21AG2010"],
-            white: ["B21AA2010", "B21AF2010"],
-            total: ["B21AA2010", "B21AB2010", "B21AC2010", "B21AD2010", "B21AE2010", "B21AF2010", "B21AG2010", "B21AH2010", "B21AI2010", "B21AJ2010"]
+            filename: "nhgis0015_ts_nominal_2010_county.csv",
+            black: ["AE7AB2010", "AE7AH2010"],
+            white: ["AE7AA2010"],
+            hispanic: ["AE7AG2010", "AE7AH2010", "AE7AI2010", "AE7AJ2010", "AE7AK2010", "AE7AL2010"],
+            total: ["AE7AA2010", "AE7AB2010", "AE7AC2010", "AE7AD2010", "AE7AE2010", "AE7AF2010", "AE7AG2010", "AE7AH2010", "AE7AI2010", "AE7AJ2010", "AE7AK2010", "AE7AL2010"],
+            notes: "Excludes 'other race'; Black includes Hispanic black"
         }
     ],
     derivedVariables: {
