@@ -21,9 +21,10 @@ var config = {
         {
             year: "1900",
             filename: "nhgis0008_ds31_1900_county.csv",
-            black: ["AZ3003", "AZ3004"],
+            black: ["AZ3001", "AZ3002", "AZ3003", "AZ3004"],
             white: ["AZ2001"],
-            total: ["AZ3001", "AZ3002", "AZ3003", "AZ3004", "AZ2001"]
+            total: ["AZ3001", "AZ3002", "AZ3003", "AZ3004", "AZ2001"],
+            notes: "Includes both 'Negro' and 'Other Colored'"
         },
         {
             year: "1910",
@@ -114,10 +115,10 @@ var config = {
     ],
     derivedVariables: {
         percent_black: function (row) {
-            return (100 * (row.total > 0 ? row.black / row.total : 0)).toFixed(4);
+            return row.total > 0 ? (100 * (row.black / row.total)).toFixed(4) : '-';
         },
         percent_nonwhite: function(row) {
-            return (row.total > 0 ? 100 * (1 - row.white / row.total) : 0).toFixed(4);
+            return row.total > 0 ? (100 * (1 - row.white / row.total)).toFixed(4) : '-';
         }
     },
     geographyFilterCallbacks: {
