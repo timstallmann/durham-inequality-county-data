@@ -119,10 +119,9 @@ var config = {
             male: ["B21AA1990", "B21AB1990", "B21AC1990", "B21AD1990", "B21AE1990"],
             white_men: ["B21AA1990"],
             black_women: ["B21AG1990"],
-            black: ["AZ8AB1990", "AZ8AG1990"],
-            white: ["AZ8AA1990", "AZ8AF1990"],
-            total: ["B21AA1990", "B21AB1990", "B21AC1990", "B21AD1990", "B21AE1990", "B21AF1990", "B21AG1990", "B21AH1990", "B21AI1990", "B21AJ1990"],
-            notes: "White includes hispanic"
+            black: ["B21AB1990", "B21AG1990"],
+            white: ["B21AA1990", "B21AF1990"],
+            total: ["B21AA1990", "B21AB1990", "B21AC1990", "B21AD1990", "B21AE1990", "B21AF1990", "B21AG1990", "B21AH1990", "B21AI1990", "B21AJ1990"]
         },
         {
             year: "2000",
@@ -131,10 +130,9 @@ var config = {
             male: ["B21AA2000", "B21AB2000", "B21AC2000", "B21AD2000", "B21AE2000"],
             white_men: ["B21AA2000"],
             black_women: ["B21AG2000"],
-            black: ["AZ8AB2000", "AZ8AG2000"],
-            white: ["AZ8AA2000", "AZ8AF2000"],
-            total: ["B21AA2000", "B21AB2000", "B21AC2000", "B21AD2000", "B21AE2000", "B21AF2000", "B21AG2000", "B21AH2000", "B21AI2000", "B21AJ2000"],
-            notes: "White includes hispanic"
+            black: ["B21AB2000", "B21AG2000"],
+            white: ["B21AA2000", "B21AF2000"],
+            total: ["B21AA2000", "B21AB2000", "B21AC2000", "B21AD2000", "B21AE2000", "B21AF2000", "B21AG2000", "B21AH2000", "B21AI2000", "B21AJ2000"]
         },
         {
             year: "2010",
@@ -143,21 +141,20 @@ var config = {
             male: ["B21AA2010", "B21AB2010", "B21AC2010", "B21AD2010", "B21AE2010"],
             white_men: ["B21AA2010"],
             black_women: ["B21AG2010"],
-            black: ["AZ8AB2010", "AZ8AG2010"],
-            white: ["AZ8AA2010", "AZ8AF2010"],
-            total: ["B21AA2010", "B21AB2010", "B21AC2010", "B21AD2010", "B21AE2010", "B21AF2010", "B21AG2010", "B21AH2010", "B21AI2010", "B21AJ2010"],
-            notes: "White includes hispanic"
-        }
+            black: ["B21AB2010", "B21AG2010"],
+            white: ["B21AA2010", "B21AF2010"],
+            total: ["B21AA2010", "B21AB2010", "B21AC2010", "B21AD2010", "B21AE2010", "B21AF2010", "B21AG2010", "B21AH2010", "B21AI2010", "B21AJ2010"]
+        },
     ],
     derivedVariables: {
         pct_women: function (row) {
-            return (100 * (row.total > 0 ? row.female / row.total : 0)).toFixed(4);
+            return row.total > 0 ? (100 * (row.female / row.total)).toFixed(4) : '-';
         },
         black_pct_women: function(row) {
-            return (row.black > 0 ? 100 * (row.black_women / row.black) : 0).toFixed(4);
+            return row.black > 0 ? (100 * (row.black_women / row.black)).toFixed(4) : 0;
         },
         white_pct_women: function(row) {
-            return (row.white > 0 ? (100 - 100 * (row.white_men / row.white)) : 0).toFixed(4);
+            return row.white > 0 ? ((100 - 100 * (row.white_men / row.white))).toFixed(4) : 0;
         }
     },
     geographyFilterCallbacks: {
