@@ -1,6 +1,6 @@
 var config = {
     basePath: 'nhgis_sources/housing',
-    header: ['year', 'geography', 'filename', 'total_housing_units', 'occupied_housing_units', 'occupied_housing_units_with_black_householder', 'rental_housing_units', 'rental_housing_units_with_black_householder', 'percent_vacant', 'percent_rental', 'black_percent_rental', 'notes'],
+    header: ['year', 'geography', 'filename', 'total_housing_units', 'occupied_housing_units', 'occupied_housing_units_with_black_householder', 'rental_housing_units', 'rental_housing_units_with_black_householder', 'percent_occupied', 'percent_rental', 'black_percent_rental', 'notes'],
     nhgisVariables: [
         {
             year: "1900",
@@ -84,7 +84,7 @@ var config = {
         },
     ],
     derivedVariables: {
-        percent_vacant: function(row) {
+        percent_occupied: function(row) {
             return row.total_housing_units > 0 ? (100 * (row.occupied_housing_units / row.total_housing_units)).toFixed(4) : '-';
         },
         percent_rental: function(row) {

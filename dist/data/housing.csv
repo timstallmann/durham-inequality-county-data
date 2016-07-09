@@ -1,4 +1,4 @@
-"year","geography","filename","total_housing_units","occupied_housing_units","occupied_housing_units_with_black_householder","rental_housing_units","rental_housing_units_with_black_householder","percent_vacant","percent_rental","black_percent_rental","notes"
+"year","geography","filename","total_housing_units","occupied_housing_units","occupied_housing_units_with_black_householder","rental_housing_units","rental_housing_units_with_black_householder","percent_occupied","percent_rental","black_percent_rental","notes"
 1900,"country","nhgis0019_ds31_1900_county.csv","-",16313193,"-",8391522,"-","-",51.4401,"-","No clear data on occupied / vacant"
 1900,"durham_county","nhgis0019_ds31_1900_county.csv","-",5071,"-",3448,"-","-",67.9945,"-","No clear data on occupied / vacant"
 1900,"state","nhgis0019_ds31_1900_county.csv","-",367565,"-",188162,"-","-",51.1915,"-","No clear data on occupied / vacant"

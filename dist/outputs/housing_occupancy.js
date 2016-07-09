@@ -1,7 +1,7 @@
 var config = {
     basePath: 'dist/data',
     outputFile: 'housing_occupancy.csv',
-    header: ['Year', 'Total Housing Units (Durham)', 'Occupied Housing Units (Durham)', 'Percent Vacancy (Durham)', 'Percent Vacancy (NC)', 'Percent Vacancy (US)'],
+    header: ['Year', 'Total Housing Units (Durham)', 'Occupied Housing Units (Durham)', 'Percent Occupied (Durham)', 'Percent Occupied (NC)', 'Percent Occupied (US)'],
     columns: [
         {
             name: 'Year',
@@ -20,22 +20,22 @@ var config = {
             column: 'occupied_housing_units'
         },
         {
-            name: 'Percent Vacancy (Durham)',
+            name: 'Percent Occupied (Durham)',
             file: 'housing.csv',
             geography: 'state',
-            column: 'percent_vacant'
+            column: 'percent_occupied'
         },
         {
-            name: 'Percent Vacancy (NC)',
+            name: 'Percent Occupied (NC)',
             file: 'housing.csv',
             geography: 'country',
-            column: 'percent_vacant'
+            column: 'percent_occupied'
         },
         {
-            name: 'Percent Vacancy (US)',
+            name: 'Percent Occupied (US)',
             file: 'housing.csv',
             geography: 'durham_county',
-            column: 'percent_vacant'
+            column: 'percent_occupied'
         },
         {
             name: 'Notes',
