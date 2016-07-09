@@ -1,0 +1,218 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0021_ts_nominal_1970_county'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Geographic Integration Methods
+    - Source Data
+    - Citation and Use
+ 
+Detailed notes on time series design and comparability are available at: 
+    https://assets.nhgis.org/NHGIS_Time_Series_Tables.pdf 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout:     Time varies by file
+Geographic level:       County (by State)
+Geographic integration: Nominal
+Year:                   1970
+ 
+Tables:
+ 
+1. Housing Units by Occupancy Status [2]
+   Code: A43
+   Subdivided into 5 files:
+       nhgis0021_ts_1970_county.csv
+       nhgis0021_ts_1980_county.csv
+       nhgis0021_ts_1990_county.csv
+       nhgis0021_ts_2000_county.csv
+       nhgis0021_ts_2010_county.csv
+ 
+2. Occupied Housing Units by Tenure [2]
+   Code: B37
+   Subdivided into 5 files:
+       nhgis0021_ts_1970_county.csv
+       nhgis0021_ts_1980_county.csv
+       nhgis0021_ts_1990_county.csv
+       nhgis0021_ts_2000_county.csv
+       nhgis0021_ts_2010_county.csv
+ 
+3. Occupied Housing Units with Householder Who Is Black or African American* by Tenure [2]
+   Code: B39
+   Subdivided into 5 files:
+       nhgis0021_ts_1970_county.csv
+       nhgis0021_ts_1980_county.csv
+       nhgis0021_ts_1990_county.csv
+       nhgis0021_ts_2000_county.csv
+       nhgis0021_ts_2010_county.csv
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STATE:       NHGIS Integrated State Name
+        STATEFP:     FIPS State Code
+        STATENH:     NHGIS Integrated State Code
+        COUNTY:      NHGIS Integrated County Name
+        COUNTYFP:    FIPS County Code
+        COUNTYNH:    NHGIS Integrated County Code
+        NAME:        Area Name, 1970
+ 
+Table 1: (A43) Housing Units by Occupancy Status [2]
+        A43AA1970:   Housing units: Occupied
+        A43AB1970:   Housing units: Vacant
+ 
+Table 2: (B37) Occupied Housing Units by Tenure [2]
+        B37AA1970:   Housing units: Owner occupied
+        B37AB1970:   Housing units: Renter occupied
+ 
+Table 3: (B39) Occupied Housing Units with Householder Who Is Black or African American* by Tenure [2]
+        B39AA1970:   Housing units: Owner occupied ~ Householder is Black or African American (single race)
+        B39AB1970:   Housing units: Renter occupied ~ Householder is Black or African American (single race)
+ 
+--------------------------------------------------------------------------------
+Geographic Integration Methods
+--------------------------------------------------------------------------------
+ 
+Nominal Integration:
+
+    Nominally integrated tables link geographic units across time according to
+    their names and codes, disregarding any changes in unit boundaries. The
+    identified geographic units match those from each census source, so the
+    spatial definitions and total number of units may vary from one time to
+    another (e.g., a city may annex land, a tract may be split in two, a new
+    county may be created, etc.). The tables include data for a particular
+    geographic unit only at times when the unit's name or code was in use,
+    resulting in truncated time series for some areas.
+    
+    Users should be cautious when interpreting changes in nominally integrated
+    time series because a single unit code may refer to distinctly different
+    areas at different times. If you are uncertain whether any boundaries
+    changed in your areas of interest, we recommend inspecting NHGIS boundary
+    files to confirm. (At this time, boundary files are available for all units
+    and years in nominally integrated time series *except* 1970 places and
+    county subdivisions.)
+    
+    Alternatively, for some topics and time periods, NHGIS provides
+    "geographically standardized" time series, which provide data from multiple
+    times for a single census's geographic units (e.g., 2000 and 2010 data for
+    2010 census units). A disadvantage of standardized time series is that, in
+    areas where source units do not nest perfectly within a unit of the standard
+    year (e.g., where a source 2000 unit intersects multiple 2010 units), NHGIS
+    applies interpolation to standardize the data, a process which may
+    occasionally produce substantial errors.
+
+Complete documentation on time series integration methods is available at:
+    https://www.nhgis.org/documentation/time-series
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Additional documentation on NHGIS data sources is available at:
+    https://www.nhgis.org/documentation/tabular-data
+
+Table 1: (A43) Housing Units by Occupancy Status [2]
+ 
+    Time series AA: Housing units: Occupied
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT30. Occupancy/Vacancy Status
+                Universe: Year-Round Housing Units
+                    Variable: [CE9001] Occupied
+ 
+    Time series AB: Housing units: Vacant
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT29. Year-Round/Seasonal and Migratory Status
+                Universe: Housing Units
+                    Variable: [CE5002] Vacant seasonal
+                    Variable: [CE5003] Vacant migratory
+            Source table: NT30. Occupancy/Vacancy Status
+                Universe: Year-Round Housing Units
+                    Variable: [CE9002] Vacant year-round: For rent
+                    Variable: [CE9003] Vacant year-round: For sale only
+                    Variable: [CE9004] Vacant year-round: Rented or sold but not occupied
+                    Variable: [CE9005] Vacant year-round: For occasional use
+                    Variable: [CE9006] Vacant year-round: Other vacant
+ 
+ 
+Table 2: (B37) Occupied Housing Units by Tenure [2]
+ 
+    Time series AA: Housing units: Owner occupied
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT42C. Tenure by Number of Rooms in Unit
+                Universe: Occupied Housing Units
+                    Variable: [CGP001] Owner occupied >> 1 room in unit
+                    Variable: [CGP002] Owner occupied >> 2 rooms in unit
+                    Variable: [CGP003] Owner occupied >> 3 rooms in unit
+                    Variable: [CGP004] Owner occupied >> 4 rooms in unit
+                    Variable: [CGP005] Owner occupied >> 5 rooms in unit
+                    Variable: [CGP006] Owner occupied >> 6 rooms in unit
+                    Variable: [CGP007] Owner occupied >> 7 rooms in unit
+                    Variable: [CGP008] Owner occupied >> 8 rooms in unit
+                    Variable: [CGP009] Owner occupied >> 9 rooms or more
+ 
+    Time series AB: Housing units: Renter occupied
+        Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+            Source table: NT42C. Tenure by Number of Rooms in Unit
+                Universe: Occupied Housing Units
+                    Variable: [CGP010] Renter occupied >> 1 room in unit
+                    Variable: [CGP011] Renter occupied >> 2 rooms in unit
+                    Variable: [CGP012] Renter occupied >> 3 rooms in unit
+                    Variable: [CGP013] Renter occupied >> 4 rooms in unit
+                    Variable: [CGP014] Renter occupied >> 5 rooms in unit
+                    Variable: [CGP015] Renter occupied >> 6 rooms in unit
+                    Variable: [CGP016] Renter occupied >> 7 rooms in unit
+                    Variable: [CGP017] Renter occupied >> 8 rooms in unit
+                    Variable: [CGP018] Renter occupied >> 9 rooms or more
+ 
+ 
+Table 3: (B39) Occupied Housing Units with Householder Who Is Black or African American* by Tenure [2]
+ 
+    Time series AA: Housing units: Owner occupied ~ Householder is Black or African American (single race)
+        Source dataset: 1970 Census: Count 1 - 100% Data [Block Groups, Enum. Districts, Cong. Districts, etc.]
+            Source table: NT26A3. Tenure
+                Universe: Negro Occupied Housing Units
+                    Variable: [CB6001] Owner occupied
+ 
+    Time series AB: Housing units: Renter occupied ~ Householder is Black or African American (single race)
+        Source dataset: 1970 Census: Count 1 - 100% Data [Block Groups, Enum. Districts, Cong. Districts, etc.]
+            Source table: NT26A3. Tenure
+                Universe: Negro Occupied Housing Units
+                    Variable: [CB6002] Renter occupied
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu
