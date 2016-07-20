@@ -45,7 +45,7 @@ function scanDataRow(geography, outputColName, inputColName, outputTable, row) {
     }
 }
 
-function saveOutput(filename, header, yearColumnName, outputTable) {
+function saveOutput(filename, header, yearColumnName, columnCallbacks, outputTable) {
     var outputStringify = csv.stringify({ quotedString: true });
     var file = fs.createWriteStream(filename);
 
@@ -72,6 +72,16 @@ function saveOutput(filename, header, yearColumnName, outputTable) {
             }
             else if (outputTable[year].hasOwnProperty(colName)) {
                 outputRow.push(convertToNumeric(outputTable[year][colName]));
+            }
+            else if (typeof columnCallbacks[colName] == 'function') {
+                var result = columnCallbacks[colName](outputTable[year])
+                if (isNaN(result)) {
+                    result = '-';
+                }
+                else {
+                    result = Number.parseFloat(result);
+                }
+                outputRow.push(result);
             }
             else {
                 outputRow.push('-');
@@ -112,11 +122,18 @@ else {
 
 var outputTable = [];
 var yearColumn;
-var inputFilesRemaining = config.columns.length - 1;
+var columnCallbacks = [];
+var inputFilesRemaining = config.columns.length;
 config.columns.forEach(
     function(configRow) {
         if (configRow.hasOwnProperty('year') && configRow.year) {
             yearColumn = configRow.name;
+            inputFilesRemaining -= 1;
+            return;
+        }
+        else if (configRow.hasOwnProperty('callback') && configRow.callback) {
+            columnCallbacks[configRow.name] = configRow.callback;
+            inputFilesRemaining -= 1;
             return;
         }
         
@@ -134,7 +151,7 @@ config.columns.forEach(
                 );
                 inputFilesRemaining -= 1;
                 if (inputFilesRemaining == 0) {
-                    saveOutput(__dirname + '/' + program.outputDir + '/' + config.outputFile, config.header, yearColumn, outputTable);
+                    saveOutput(__dirname + '/' + program.outputDir + '/' + config.outputFile, config.header, yearColumn, columnCallbacks, outputTable);
                 }
             }
         });

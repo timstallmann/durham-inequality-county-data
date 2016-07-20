@@ -1,0 +1,259 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0023_ts_nominal_1980_county'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Geographic Integration Methods
+    - Source Data
+    - Citation and Use
+ 
+Detailed notes on time series design and comparability are available at: 
+    https://assets.nhgis.org/NHGIS_Time_Series_Tables.pdf 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout:     Time varies by file
+Geographic level:       County (by State)
+Geographic integration: Nominal
+Year:                   1980
+ 
+Tables:
+ 
+1. Total Families
+   Code: A68
+   Subdivided into 5 files:
+       nhgis0023_ts_1970_county.csv
+       nhgis0023_ts_1980_county.csv
+       nhgis0023_ts_1990_county.csv
+       nhgis0023_ts_2000_county.csv
+       nhgis0023_ts_2010_county.csv
+ 
+2. Persons in Families
+   Code: CL5
+   Subdivided into 5 files:
+       nhgis0023_ts_1970_county.csv
+       nhgis0023_ts_1980_county.csv
+       nhgis0023_ts_1990_county.csv
+       nhgis0023_ts_2000_county.csv
+       nhgis0023_ts_2010_county.csv
+ 
+3. Persons 25 Years and Over by Educational Attainment [3]
+   Code: B69
+   Subdivided into 5 files:
+       nhgis0023_ts_1970_county.csv
+       nhgis0023_ts_1980_county.csv
+       nhgis0023_ts_1990_county.csv
+       nhgis0023_ts_2000_county.csv
+       nhgis0023_ts_20125_county.csv
+ 
+4. Persons 16 Years and Over by Labor Force and Employment Status [6]
+   Code: B84
+   Subdivided into 5 files:
+       nhgis0023_ts_1970_county.csv
+       nhgis0023_ts_1980_county.csv
+       nhgis0023_ts_1990_county.csv
+       nhgis0023_ts_2000_county.csv
+       nhgis0023_ts_20125_county.csv
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STATE:       NHGIS Integrated State Name
+        STATEFP:     FIPS State Code
+        STATENH:     NHGIS Integrated State Code
+        COUNTY:      NHGIS Integrated County Name
+        COUNTYFP:    FIPS County Code
+        COUNTYNH:    NHGIS Integrated County Code
+        NAME:        Area Name, 1980
+ 
+Table 1: (A68) Total Families
+        A68AA1980:   Families: Total
+ 
+Table 2: (CL5) Persons in Families
+        CL5AA1980:   Persons: In families
+ 
+Table 3: (B69) Persons 25 Years and Over by Educational Attainment [3]
+        B69AA1980:   Persons: 25 years and over ~ Less than 9th grade
+        B69AB1980:   Persons: 25 years and over ~ 9th grade to 3 years of college (until 1980) or to some college or associate's degree (since 1990)
+        B69AC1980:   Persons: 25 years and over ~ 4 or more years of college (until 1980) or bachelor's degree or higher (since 1990)
+ 
+Table 4: (B84) Persons 16 Years and Over by Labor Force and Employment Status [6]
+        B84AA1980:   Persons: 16 years and over ~ In labor force
+        B84AB1980:   Persons: 16 years and over ~ In labor force--In Armed Forces
+        B84AC1980:   Persons: 16 years and over ~ In labor force--Civilian
+        B84AD1980:   Persons: 16 years and over ~ In labor force--Civilian--Employed
+        B84AE1980:   Persons: 16 years and over ~ In labor force--Civilian--Unemployed
+        B84AF1980:   Persons: 16 years and over ~ Not in labor force
+ 
+--------------------------------------------------------------------------------
+Geographic Integration Methods
+--------------------------------------------------------------------------------
+ 
+Nominal Integration:
+
+    Nominally integrated tables link geographic units across time according to
+    their names and codes, disregarding any changes in unit boundaries. The
+    identified geographic units match those from each census source, so the
+    spatial definitions and total number of units may vary from one time to
+    another (e.g., a city may annex land, a tract may be split in two, a new
+    county may be created, etc.). The tables include data for a particular
+    geographic unit only at times when the unit's name or code was in use,
+    resulting in truncated time series for some areas.
+    
+    Users should be cautious when interpreting changes in nominally integrated
+    time series because a single unit code may refer to distinctly different
+    areas at different times. If you are uncertain whether any boundaries
+    changed in your areas of interest, we recommend inspecting NHGIS boundary
+    files to confirm. (At this time, boundary files are available for all units
+    and years in nominally integrated time series *except* 1970 places and
+    county subdivisions.)
+    
+    Alternatively, for some topics and time periods, NHGIS provides
+    "geographically standardized" time series, which provide data from multiple
+    times for a single census's geographic units (e.g., 2000 and 2010 data for
+    2010 census units). A disadvantage of standardized time series is that, in
+    areas where source units do not nest perfectly within a unit of the standard
+    year (e.g., where a source 2000 unit intersects multiple 2010 units), NHGIS
+    applies interpolation to standardize the data, a process which may
+    occasionally produce substantial errors.
+
+Complete documentation on time series integration methods is available at:
+    https://www.nhgis.org/documentation/time-series
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Additional documentation on NHGIS data sources is available at:
+    https://www.nhgis.org/documentation/tabular-data
+
+Table 1: (A68) Total Families
+ 
+    Time series AA: Families: Total
+        Source dataset: 1980 Census: STF 1 - 100% Data
+            Source table: NT2. Families
+                Universe: Families
+                    Variable: [C7N001] Total
+ 
+ 
+Table 2: (CL5) Persons in Families
+ 
+    Time series AA: Persons: In families
+        Source dataset: 1980 Census: STF 1 - 100% Data
+            Source table: NT15. Household Type and Relationship
+                Universe: Persons
+                    Variable: [C7G001] In family household: Householder
+                    Variable: [C7G002] In family household: Spouse
+                    Variable: [C7G003] In family household: Other relatives
+ 
+ 
+Table 3: (B69) Persons 25 Years and Over by Educational Attainment [3]
+ 
+    Time series AA: Persons: 25 years and over ~ Less than 9th grade
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT48A. Years of School Completed
+                Universe: Persons 25 Years and Over
+                    Variable: [DHM001] Elementary (0-8 years)
+ 
+    Time series AB: Persons: 25 years and over ~ 9th grade to 3 years of college (until 1980) or to some college or associate's degree (since 1990)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT48A. Years of School Completed
+                Universe: Persons 25 Years and Over
+                    Variable: [DHM002] High school: 1-3 years
+                    Variable: [DHM003] High school: 4 years
+                    Variable: [DHM004] College: 1-3 years
+ 
+    Time series AC: Persons: 25 years and over ~ 4 or more years of college (until 1980) or bachelor's degree or higher (since 1990)
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT48A. Years of School Completed
+                Universe: Persons 25 Years and Over
+                    Variable: [DHM005] College: 4 or more years
+ 
+ 
+Table 4: (B84) Persons 16 Years and Over by Labor Force and Employment Status [6]
+ 
+    Time series AA: Persons: 16 years and over ~ In labor force
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT55A. Sex by Labor Force Status
+                Universe: Persons 16 Years and Over
+                    Variable: [DHX001] Male >> Labor force: Armed forces
+                    Variable: [DHX002] Male >> Labor force: Civilian labor force: Employed
+                    Variable: [DHX003] Male >> Labor force: Civilian labor force: Unemployed
+                    Variable: [DHX005] Female >> Labor force: Armed forces
+                    Variable: [DHX006] Female >> Labor force: Civilian labor force: Employed
+                    Variable: [DHX007] Female >> Labor force: Civilian labor force: Unemployed
+ 
+    Time series AB: Persons: 16 years and over ~ In labor force--In Armed Forces
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT55A. Sex by Labor Force Status
+                Universe: Persons 16 Years and Over
+                    Variable: [DHX001] Male >> Labor force: Armed forces
+                    Variable: [DHX005] Female >> Labor force: Armed forces
+ 
+    Time series AC: Persons: 16 years and over ~ In labor force--Civilian
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT55A. Sex by Labor Force Status
+                Universe: Persons 16 Years and Over
+                    Variable: [DHX002] Male >> Labor force: Civilian labor force: Employed
+                    Variable: [DHX003] Male >> Labor force: Civilian labor force: Unemployed
+                    Variable: [DHX006] Female >> Labor force: Civilian labor force: Employed
+                    Variable: [DHX007] Female >> Labor force: Civilian labor force: Unemployed
+ 
+    Time series AD: Persons: 16 years and over ~ In labor force--Civilian--Employed
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT55A. Sex by Labor Force Status
+                Universe: Persons 16 Years and Over
+                    Variable: [DHX002] Male >> Labor force: Civilian labor force: Employed
+                    Variable: [DHX006] Female >> Labor force: Civilian labor force: Employed
+ 
+    Time series AE: Persons: 16 years and over ~ In labor force--Civilian--Unemployed
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT55A. Sex by Labor Force Status
+                Universe: Persons 16 Years and Over
+                    Variable: [DHX003] Male >> Labor force: Civilian labor force: Unemployed
+                    Variable: [DHX007] Female >> Labor force: Civilian labor force: Unemployed
+ 
+    Time series AF: Persons: 16 years and over ~ Not in labor force
+        Source dataset: 1980 Census: STF 3 - Sample-Based Data
+            Source table: NT55A. Sex by Labor Force Status
+                Universe: Persons 16 Years and Over
+                    Variable: [DHX004] Male >> Not in labor force
+                    Variable: [DHX008] Female >> Not in labor force
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu
