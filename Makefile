@@ -7,3 +7,4 @@ outputs: timeseries
 	node createOutputTables.js -c dist/outputs/housing_tenure.js -o dist/outputs
 	node createOutputTables.js -c dist/outputs/housing_occupancy.js -o dist/outputs
 	node createOutputTables.js -c dist/outputs/family_size.js -o dist/outputs
+	node createOutputTables.js -c dist/outputs/educational_attainment.js -o dist/outputs
